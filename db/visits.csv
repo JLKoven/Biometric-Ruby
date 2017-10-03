@@ -1,0 +1,823 @@
+id,date,type,program
+1,5/10/2015,bench,initialFourSet
+2,5/22/2015,bench,initialFourSet
+3,6/7/2015,bench,initialFourSet
+4,6/15/2015,bench,initialFourSet
+5,6/22/2015,bench,initialFourSet
+6,6/29/2015,bench,initialFourSet
+7,7/6/2015,bench,initialFourSet
+8,7/13/2015,bench,initialFourSet
+9,7/26/2015,bench,initialFourSet
+10,8/2/2015,bench,initialFourSet
+11,8/9/2015,bench,initialFourSet
+12,8/16/2015,bench,initialFourSet
+13,8/23/2015,bench,initialFourSet
+14,8/30/2015,bench,initialFourSet
+15,9/6/2015,bench,initialFourSet
+16,9/13/2015,bench,initialFourSet
+17,9/20/2015,bench,initialFourSet
+18,9/27/2015,bench,initialFourSet
+19,10/4/2015,bench,initialFourSet
+20,10/11/2015,bench,initialFourSet
+21,10/18/2015,bench,initialFourSet
+22,10/25/2015,bench,initialFourSet
+23,11/1/2015,bench,initialFourSet
+24,11/2/2015,low squat,initialFourSet
+25,11/5/2015,deadlift,initialFourSet
+26,11/8/2015,bench,initialFourSet
+27,11/9/2015,low squat,initialFourSet
+28,11/12/2015,deadlift,initialFourSet
+29,11/15/2015,bench,initialFourSet
+30,11/16/2015,low squat,initialFourSet
+31,11/19/2015,deadlift,initialFourSet
+32,11/22/2015,bench,initialFourSet
+33,11/23/2015,low squat,initialFourSet
+34,11/26/2015,deadlift,initialFourSet
+35,11/29/2015,bench,initialFourSet
+36,11/30/2015,low squat,initialFourSet
+37,12/3/2015,deadlift,initialFourSet
+38,12/6/2015,bench,initialFourSet
+39,12/7/2015,low squat,initialFourSet
+40,12/10/2015,deadlift,initialFourSet
+41,12/13/2015,bench,initialFourSet
+42,12/14/2015,low squat,initialFourSet
+43,12/17/2015,deadlift,initialFourSet
+44,12/20/2015,bench,initialFourSet
+45,12/21/2015,low squat,initialFourSet
+46,12/24/2015,deadlift,initialFourSet
+47,12/27/2015,bench,initialFourSet
+48,12/28/2015,low squat,initialFourSet
+49,12/31/2015,deadlift,initialFourSet
+50,1/3/2016,bench,initialFourSet
+51,1/4/2016,low squat,initialFourSet
+52,1/7/2016,deadlift,initialFourSet
+53,1/10/2016,bench,initialFourSet
+54,1/11/2016,low squat,initialFourSet
+55,1/14/2016,deadlift,initialFourSet
+56,1/17/2016,bench,initialFourSet
+57,1/18/2016,low squat,initialFourSet
+58,1/21/2016,deadlift,initialFourSet
+59,1/24/2016,bench,initialFourSet
+60,1/25/2016,low squat,initialFourSet
+61,1/29/2016,deadlift,initialFourSet
+62,1/31/2016,bench,initialFourSet
+63,2/1/2016,low squat,initialFourSet
+64,2/4/2016,deadlift,initialFourSet
+65,2/7/2016,bench,initialFourSet
+66,2/8/2016,low squat,initialFourSet
+67,2/11/2016,deadlift,initialFourSet
+68,2/14/2016,bench,initialFourSet
+69,2/15/2016,low squat,initialFourSet
+70,2/18/2016,deadlift,initialFourSet
+71,2/21/2016,bench,initialFourSet
+72,2/22/2016,low squat,initialFourSet
+73,2/25/2016,deadlift,initialFourSet
+74,2/28/2016,bench,initialFourSet
+75,2/29/2016,low squat,initialFourSet
+76,3/3/2016,deadlift,initialFourSet
+77,3/6/2016,bench,initialFourSet
+78,3/7/2016,low squat,initialFourSet
+79,3/10/2016,deadlift,initialFourSet
+80,3/13/2016,bench,initialFourSet
+81,3/14/2016,low squat,initialFourSet
+82,3/17/2016,deadlift,initialFourSet
+83,3/20/2016,bench,initialFourSet
+84,3/21/2016,low squat,initialFourSet
+85,3/24/2016,deadlift,initialFourSet
+86,3/26/2016,bench,initialFourSet
+87,3/28/2016,low squat,initialFourSet
+88,3/31/2016,deadlift,initialFourSet
+89,4/3/2016,bench,initialFourSet
+90,4/4/2016,low squat,initialFourSet
+91,4/7/2016,deadlift,initialFourSet
+92,4/10/2016,bench,initialFourSet
+93,4/11/2016,low squat,initialFourSet
+94,4/14/2016,deadlift,initialFourSet
+95,4/17/2016,bench,initialFourSet
+96,4/18/2016,low squat,initialFourSet
+97,4/21/2016,deadlift,initialFourSet
+98,4/24/2016,bench,initialFourSet
+99,4/25/2016,low squat,initialFourSet
+100,4/29/2016,deadlift,initialFourSet
+101,5/1/2016,bench,initialFourSet
+102,5/2/2016,low squat,initialFourSet
+103,5/4/2016,overhead,Wendler4
+104,5/5/2016,deadlift,Wendler3
+105,5/8/2016,bench,Wendler2
+106,5/9/2016,low squat,Wendler1
+107,5/11/2016,overhead,Wendler4
+108,5/12/2016,deadlift,Wendler3
+109,5/15/2016,bench,Wendler2
+110,5/16/2016,low squat,Wendler1
+111,5/18/2016,overhead,Wendler4
+112,5/19/2016,deadlift,Wendler3
+113,5/21/2016,bench,Wendler2
+114,5/23/2016,low squat,Wendler1
+115,5/25/2016,overhead,Wendler4
+116,5/26/2016,deadlift,Wendler3
+117,5/29/2016,bench,Wendler2
+118,5/30/2016,low squat,Wendler1
+119,6/1/2016,overhead,Wendler4
+120,6/2/2016,deadlift,Wendler3
+121,6/5/2016,bench,Wendler2
+122,6/6/2016,low squat,Wendler1
+123,6/8/2016,overhead,Wendler4
+124,6/9/2016,deadlift,Wendler3
+125,6/12/2016,bench,Wendler2
+126,6/13/2016,low squat,Wendler1
+127,6/15/2016,overhead,Wendler4
+128,6/16/2016,deadlift,Wendler3
+129,6/19/2016,bench,Wendler2
+130,6/20/2016,low squat,Wendler1
+131,6/22/2016,overhead,Wendler4
+132,6/23/2016,deadlift,Wendler3
+133,6/26/2016,bench,Wendler2
+134,6/27/2016,low squat,Wendler1
+135,6/29/2016,overhead,Wendler4
+136,6/30/2016,deadlift,Wendler3
+137,7/3/2016,bench,Wendler2
+138,7/4/2016,low squat,Wendler1
+139,7/6/2016,overhead,Wendler4
+140,7/7/2016,deadlift,Wendler3
+141,7/10/2016,bench,Wendler2
+142,7/11/2016,low squat,Wendler1
+143,7/13/2016,overhead,Wendler4
+144,7/14/2016,deadlift,Wendler3
+145,7/16/2016,bench,Wendler2
+146,7/17/2016,low squat,Wendler1
+147,7/18/2016,overhead,Wendler4
+148,7/20/2016,deadlift,Wendler3
+149,7/23/2016,bench,Wendler2
+150,7/25/2016,low squat,Wendler1
+151,7/27/2016,overhead,Wendler4
+152,7/28/2016,deadlift,Wendler3
+153,7/30/2016,bench,Wendler2
+154,7/31/2016,low squat,Wendler1
+155,8/1/2016,overhead,Wendler4
+156,8/2/2016,deadlift,Wendler3
+157,8/4/2016,bench,Wendler2
+158,8/5/2016,low squat,Wendler1
+159,8/6/2016,overhead,Wendler4
+160,8/7/2016,deadlift,Wendler3
+161,8/8/2016,low squat,Wendler1
+162,8/8/2016,bench,Wendler2
+163,8/12/2016,deadlift,Wendler3
+164,8/12/2016,overhead,Wendler4
+165,8/15/2016,low squat,Wendler1
+166,8/15/2016,bench,Wendler2
+167,8/19/2016,deadlift,Wendler3
+168,8/19/2016,overhead,Wendler4
+169,8/22/2016,low squat,Wendler1
+170,8/22/2016,bench,Wendler2
+171,8/26/2016,deadlift,Wendler3
+172,8/26/2016,overhead,Wendler4
+173,8/29/2016,low squat,Wendler1
+174,8/29/2016,bench,Wendler2
+175,9/1/2016,deadlift,Wendler1
+176,9/1/2016,overhead,Wendler2
+177,9/5/2016,low squat,Wendler3
+178,9/5/2016,bench,Wendler4
+179,9/9/2016,deadlift,Wendler1
+180,9/9/2016,overhead,Wendler2
+181,9/12/2016,low squat,Wendler3
+182,9/12/2016,bench,Wendler4
+183,9/16/2016,deadlift,Wendler1
+184,9/16/2016,overhead,Wendler2
+185,9/19/2016,low squat,Wendler3
+186,9/19/2016,bench,Wendler4
+187,9/23/2016,deadlift,Wendler1
+188,9/23/2016,overhead,Wendler2
+189,9/26/2016,low squat,Wendler3
+190,9/26/2016,bench,Wendler4
+191,9/30/2016,deadlift,Wendler1
+192,9/30/2016,overhead,Wendler2
+193,10/3/2016,low squat,Wendler3
+194,10/3/2016,bench,Wendler4
+195,10/7/2016,deadlift,Wendler1
+196,10/7/2016,overhead,Wendler2
+197,10/10/2016,low squat,Wendler3
+198,10/10/2016,bench,Wendler4
+199,10/14/2016,deadlift,Wendler1
+200,10/14/2016,overhead,Wendler2
+201,10/17/2016,low squat,Wendler3
+202,10/17/2016,bench,Wendler4
+203,10/21/2016,deadlift,Wendler1
+204,10/21/2016,overhead,Wendler2
+205,10/24/2016,low squat,Wendler3
+206,10/24/2016,bench,Wendler4
+207,10/28/2016,deadlift,Wendler1
+208,10/28/2016,overhead,Wendler2
+209,10/31/2016,low squat,Wendler3
+210,10/31/2016,bench,Wendler4
+211,11/4/2016,deadlift,Wendler1
+212,11/4/2016,overhead,Wendler2
+213,11/7/2016,low squat,Wendler3
+214,11/7/2016,bench,Wendler4
+215,5/10/2015,bench,initialFourSet
+216,5/22/2015,bench,initialFourSet
+217,6/7/2015,bench,initialFourSet
+218,6/15/2015,bench,initialFourSet
+219,6/22/2015,bench,initialFourSet
+220,6/29/2015,bench,initialFourSet
+221,7/6/2015,bench,initialFourSet
+222,7/13/2015,bench,initialFourSet
+223,7/26/2015,bench,initialFourSet
+224,8/2/2015,bench,initialFourSet
+225,8/9/2015,bench,initialFourSet
+226,8/16/2015,bench,initialFourSet
+227,8/23/2015,bench,initialFourSet
+228,8/30/2015,bench,initialFourSet
+229,9/6/2015,bench,initialFourSet
+230,9/13/2015,bench,initialFourSet
+231,9/20/2015,bench,initialFourSet
+232,9/27/2015,bench,initialFourSet
+233,10/4/2015,bench,initialFourSet
+234,10/11/2015,bench,initialFourSet
+235,10/18/2015,bench,initialFourSet
+236,10/25/2015,bench,initialFourSet
+237,11/1/2015,bench,initialFourSet
+238,11/2/2015,low squat,initialFourSet
+239,11/5/2015,deadlift,initialFourSet
+240,11/8/2015,bench,initialFourSet
+241,11/9/2015,low squat,initialFourSet
+242,11/12/2015,deadlift,initialFourSet
+243,11/15/2015,bench,initialFourSet
+244,11/16/2015,low squat,initialFourSet
+245,11/19/2015,deadlift,initialFourSet
+246,11/22/2015,bench,initialFourSet
+247,11/23/2015,low squat,initialFourSet
+248,11/26/2015,deadlift,initialFourSet
+249,11/29/2015,bench,initialFourSet
+250,11/30/2015,low squat,initialFourSet
+251,12/3/2015,deadlift,initialFourSet
+252,12/6/2015,bench,initialFourSet
+253,12/7/2015,low squat,initialFourSet
+254,12/10/2015,deadlift,initialFourSet
+255,12/13/2015,bench,initialFourSet
+256,12/14/2015,low squat,initialFourSet
+257,12/17/2015,deadlift,initialFourSet
+258,12/20/2015,bench,initialFourSet
+259,12/21/2015,low squat,initialFourSet
+260,12/24/2015,deadlift,initialFourSet
+261,12/27/2015,bench,initialFourSet
+262,12/28/2015,low squat,initialFourSet
+263,12/31/2015,deadlift,initialFourSet
+264,1/3/2016,bench,initialFourSet
+265,1/4/2016,low squat,initialFourSet
+266,1/7/2016,deadlift,initialFourSet
+267,1/10/2016,bench,initialFourSet
+268,1/11/2016,low squat,initialFourSet
+269,1/14/2016,deadlift,initialFourSet
+270,1/17/2016,bench,initialFourSet
+271,1/18/2016,low squat,initialFourSet
+272,1/21/2016,deadlift,initialFourSet
+273,1/24/2016,bench,initialFourSet
+274,1/25/2016,low squat,initialFourSet
+275,1/29/2016,deadlift,initialFourSet
+276,1/31/2016,bench,initialFourSet
+277,2/1/2016,low squat,initialFourSet
+278,2/4/2016,deadlift,initialFourSet
+279,2/7/2016,bench,initialFourSet
+280,2/8/2016,low squat,initialFourSet
+281,2/11/2016,deadlift,initialFourSet
+282,2/14/2016,bench,initialFourSet
+283,2/15/2016,low squat,initialFourSet
+284,2/18/2016,deadlift,initialFourSet
+285,2/21/2016,bench,initialFourSet
+286,2/22/2016,low squat,initialFourSet
+287,2/25/2016,deadlift,initialFourSet
+288,2/28/2016,bench,initialFourSet
+289,2/29/2016,low squat,initialFourSet
+290,3/3/2016,deadlift,initialFourSet
+291,3/6/2016,bench,initialFourSet
+292,3/7/2016,low squat,initialFourSet
+293,3/10/2016,deadlift,initialFourSet
+294,3/13/2016,bench,initialFourSet
+295,3/14/2016,low squat,initialFourSet
+296,3/17/2016,deadlift,initialFourSet
+297,3/20/2016,bench,initialFourSet
+298,3/21/2016,low squat,initialFourSet
+299,3/24/2016,deadlift,initialFourSet
+300,3/26/2016,bench,initialFourSet
+301,3/28/2016,low squat,initialFourSet
+302,3/31/2016,deadlift,initialFourSet
+303,4/3/2016,bench,initialFourSet
+304,4/4/2016,low squat,initialFourSet
+305,4/7/2016,deadlift,initialFourSet
+306,4/10/2016,bench,initialFourSet
+307,4/11/2016,low squat,initialFourSet
+308,4/14/2016,deadlift,initialFourSet
+309,4/17/2016,bench,initialFourSet
+310,4/18/2016,low squat,initialFourSet
+311,4/21/2016,deadlift,initialFourSet
+312,4/24/2016,bench,initialFourSet
+313,4/25/2016,low squat,initialFourSet
+314,4/29/2016,deadlift,initialFourSet
+315,5/1/2016,bench,initialFourSet
+316,5/2/2016,low squat,initialFourSet
+317,5/4/2016,overhead,Wendler4
+318,5/5/2016,deadlift,Wendler3
+319,5/8/2016,bench,Wendler2
+320,5/9/2016,low squat,Wendler1
+321,5/11/2016,overhead,Wendler4
+322,5/12/2016,deadlift,Wendler3
+323,5/15/2016,bench,Wendler2
+324,5/16/2016,low squat,Wendler1
+325,5/18/2016,overhead,Wendler4
+326,5/19/2016,deadlift,Wendler3
+327,5/21/2016,bench,Wendler2
+328,5/23/2016,low squat,Wendler1
+329,5/25/2016,overhead,Wendler4
+330,5/26/2016,deadlift,Wendler3
+331,5/29/2016,bench,Wendler2
+332,5/30/2016,low squat,Wendler1
+333,6/1/2016,overhead,Wendler4
+334,6/2/2016,deadlift,Wendler3
+335,6/5/2016,bench,Wendler2
+336,6/6/2016,low squat,Wendler1
+337,6/8/2016,overhead,Wendler4
+338,6/9/2016,deadlift,Wendler3
+339,6/12/2016,bench,Wendler2
+340,6/13/2016,low squat,Wendler1
+341,6/15/2016,overhead,Wendler4
+342,6/16/2016,deadlift,Wendler3
+343,6/19/2016,bench,Wendler2
+344,6/20/2016,low squat,Wendler1
+345,6/22/2016,overhead,Wendler4
+346,6/23/2016,deadlift,Wendler3
+347,6/26/2016,bench,Wendler2
+348,6/27/2016,low squat,Wendler1
+349,6/29/2016,overhead,Wendler4
+350,6/30/2016,deadlift,Wendler3
+351,7/3/2016,bench,Wendler2
+352,7/4/2016,low squat,Wendler1
+353,7/6/2016,overhead,Wendler4
+354,7/7/2016,deadlift,Wendler3
+355,7/10/2016,bench,Wendler2
+356,7/11/2016,low squat,Wendler1
+357,7/13/2016,overhead,Wendler4
+358,7/14/2016,deadlift,Wendler3
+359,7/16/2016,bench,Wendler2
+360,7/17/2016,low squat,Wendler1
+361,7/18/2016,overhead,Wendler4
+362,7/20/2016,deadlift,Wendler3
+363,7/23/2016,bench,Wendler2
+364,7/25/2016,low squat,Wendler1
+365,7/27/2016,overhead,Wendler4
+366,7/28/2016,deadlift,Wendler3
+367,7/30/2016,bench,Wendler2
+368,7/31/2016,low squat,Wendler1
+369,8/1/2016,overhead,Wendler4
+370,8/2/2016,deadlift,Wendler3
+371,8/4/2016,bench,Wendler2
+372,8/5/2016,low squat,Wendler1
+373,8/6/2016,overhead,Wendler4
+374,8/7/2016,deadlift,Wendler3
+375,8/8/2016,low squat,Wendler1
+376,8/8/2016,bench,Wendler2
+377,8/12/2016,deadlift,Wendler3
+378,8/12/2016,overhead,Wendler4
+379,8/15/2016,low squat,Wendler1
+380,8/15/2016,bench,Wendler2
+381,8/19/2016,deadlift,Wendler3
+382,8/19/2016,overhead,Wendler4
+383,8/22/2016,low squat,Wendler1
+384,8/22/2016,bench,Wendler2
+385,8/26/2016,deadlift,Wendler3
+386,8/26/2016,overhead,Wendler4
+387,8/29/2016,low squat,Wendler1
+388,8/29/2016,bench,Wendler2
+389,9/1/2016,deadlift,Wendler1
+390,9/1/2016,overhead,Wendler2
+391,9/5/2016,low squat,Wendler3
+392,9/5/2016,bench,Wendler4
+393,9/9/2016,deadlift,Wendler1
+394,9/9/2016,overhead,Wendler2
+395,9/12/2016,low squat,Wendler3
+396,9/12/2016,bench,Wendler4
+397,9/16/2016,deadlift,Wendler1
+398,9/16/2016,overhead,Wendler2
+399,9/19/2016,low squat,Wendler3
+400,9/19/2016,bench,Wendler4
+401,9/23/2016,deadlift,Wendler1
+402,9/23/2016,overhead,Wendler2
+403,9/26/2016,low squat,Wendler3
+404,9/26/2016,bench,Wendler4
+405,9/30/2016,deadlift,Wendler1
+406,9/30/2016,overhead,Wendler2
+407,10/3/2016,low squat,Wendler3
+408,10/3/2016,bench,Wendler4
+409,10/7/2016,deadlift,Wendler1
+410,10/7/2016,overhead,Wendler2
+411,10/10/2016,low squat,Wendler3
+412,10/10/2016,bench,Wendler4
+413,10/14/2016,deadlift,Wendler1
+414,10/14/2016,overhead,Wendler2
+415,10/17/2016,low squat,Wendler3
+416,10/17/2016,bench,Wendler4
+417,10/21/2016,deadlift,Wendler1
+418,10/21/2016,overhead,Wendler2
+419,10/24/2016,low squat,Wendler3
+420,10/24/2016,bench,Wendler4
+421,10/28/2016,deadlift,Wendler1
+422,10/28/2016,overhead,Wendler2
+423,10/31/2016,low squat,Wendler3
+424,10/31/2016,bench,Wendler4
+425,11/4/2016,deadlift,Wendler1
+426,11/4/2016,overhead,Wendler2
+427,11/7/2016,low squat,Wendler3
+428,11/7/2016,bench,Wendler4
+429,11/11/2016,deadlift,Wendler1
+430,11/11/2016,overhead,Wendler1
+431,11/14/2016,deadlift,Wendler1
+432,11/14/2016,overhead,Wendler2
+433,11/18/2016,low squat,Wendler3
+434,11/18/2016,bench,Wendler4
+435,11/21/2016,deadlift,Wendler1
+436,11/21/2016,overhead,Wendler2
+437,11/25/2016,low squat,Wendler3
+438,11/25/2016,bench,Wendler4
+439,11/28/2016,deadlift,Wendler1
+440,11/28/2016,overhead,Wendler2
+441,12/2/2016,low squat,Wendler3
+442,12/2/2016,bench,Wendler4
+443,12/5/2016,deadlift,Wendler1
+444,12/5/2016,overhead,Wendler2
+445,12/9/2016,low squat,Wendler3
+446,12/9/2016,bench,Wendler4
+447,5/10/2015,bench,initialFourSet
+448,5/22/2015,bench,initialFourSet
+449,6/7/2015,bench,initialFourSet
+450,6/15/2015,bench,initialFourSet
+451,6/22/2015,bench,initialFourSet
+452,6/29/2015,bench,initialFourSet
+453,7/6/2015,bench,initialFourSet
+454,7/13/2015,bench,initialFourSet
+455,7/26/2015,bench,initialFourSet
+456,8/2/2015,bench,initialFourSet
+457,8/9/2015,bench,initialFourSet
+458,8/16/2015,bench,initialFourSet
+459,8/23/2015,bench,initialFourSet
+460,8/30/2015,bench,initialFourSet
+461,9/6/2015,bench,initialFourSet
+462,9/13/2015,bench,initialFourSet
+463,9/20/2015,bench,initialFourSet
+464,9/27/2015,bench,initialFourSet
+465,10/4/2015,bench,initialFourSet
+466,10/11/2015,bench,initialFourSet
+467,10/18/2015,bench,initialFourSet
+468,10/25/2015,bench,initialFourSet
+469,11/1/2015,bench,initialFourSet
+470,11/2/2015,low squat,initialFourSet
+471,11/5/2015,deadlift,initialFourSet
+472,11/8/2015,bench,initialFourSet
+473,11/9/2015,low squat,initialFourSet
+474,11/12/2015,deadlift,initialFourSet
+475,11/15/2015,bench,initialFourSet
+476,11/16/2015,low squat,initialFourSet
+477,11/19/2015,deadlift,initialFourSet
+478,11/22/2015,bench,initialFourSet
+479,11/23/2015,low squat,initialFourSet
+480,11/26/2015,deadlift,initialFourSet
+481,11/29/2015,bench,initialFourSet
+482,11/30/2015,low squat,initialFourSet
+483,12/3/2015,deadlift,initialFourSet
+484,12/6/2015,bench,initialFourSet
+485,12/7/2015,low squat,initialFourSet
+486,12/10/2015,deadlift,initialFourSet
+487,12/13/2015,bench,initialFourSet
+488,12/14/2015,low squat,initialFourSet
+489,12/17/2015,deadlift,initialFourSet
+490,12/20/2015,bench,initialFourSet
+491,12/21/2015,low squat,initialFourSet
+492,12/24/2015,deadlift,initialFourSet
+493,12/27/2015,bench,initialFourSet
+494,12/28/2015,low squat,initialFourSet
+495,12/31/2015,deadlift,initialFourSet
+496,1/3/2016,bench,initialFourSet
+497,1/4/2016,low squat,initialFourSet
+498,1/7/2016,deadlift,initialFourSet
+499,1/10/2016,bench,initialFourSet
+500,1/11/2016,low squat,initialFourSet
+501,1/14/2016,deadlift,initialFourSet
+502,1/17/2016,bench,initialFourSet
+503,1/18/2016,low squat,initialFourSet
+504,1/21/2016,deadlift,initialFourSet
+505,1/24/2016,bench,initialFourSet
+506,1/25/2016,low squat,initialFourSet
+507,1/29/2016,deadlift,initialFourSet
+508,1/31/2016,bench,initialFourSet
+509,2/1/2016,low squat,initialFourSet
+510,2/4/2016,deadlift,initialFourSet
+511,2/7/2016,bench,initialFourSet
+512,2/8/2016,low squat,initialFourSet
+513,2/11/2016,deadlift,initialFourSet
+514,2/14/2016,bench,initialFourSet
+515,2/15/2016,low squat,initialFourSet
+516,2/18/2016,deadlift,initialFourSet
+517,2/21/2016,bench,initialFourSet
+518,2/22/2016,low squat,initialFourSet
+519,2/25/2016,deadlift,initialFourSet
+520,2/28/2016,bench,initialFourSet
+521,2/29/2016,low squat,initialFourSet
+522,3/3/2016,deadlift,initialFourSet
+523,3/6/2016,bench,initialFourSet
+524,3/7/2016,low squat,initialFourSet
+525,3/10/2016,deadlift,initialFourSet
+526,3/13/2016,bench,initialFourSet
+527,3/14/2016,low squat,initialFourSet
+528,3/17/2016,deadlift,initialFourSet
+529,3/20/2016,bench,initialFourSet
+530,3/21/2016,low squat,initialFourSet
+531,3/24/2016,deadlift,initialFourSet
+532,3/26/2016,bench,initialFourSet
+533,3/28/2016,low squat,initialFourSet
+534,3/31/2016,deadlift,initialFourSet
+535,4/3/2016,bench,initialFourSet
+536,4/4/2016,low squat,initialFourSet
+537,4/7/2016,deadlift,initialFourSet
+538,4/10/2016,bench,initialFourSet
+539,4/11/2016,low squat,initialFourSet
+540,4/14/2016,deadlift,initialFourSet
+541,4/17/2016,bench,initialFourSet
+542,4/18/2016,low squat,initialFourSet
+543,4/21/2016,deadlift,initialFourSet
+544,4/24/2016,bench,initialFourSet
+545,4/25/2016,low squat,initialFourSet
+546,4/29/2016,deadlift,initialFourSet
+547,5/1/2016,bench,initialFourSet
+548,5/2/2016,low squat,initialFourSet
+549,5/4/2016,overhead,Wendler4
+550,5/5/2016,deadlift,Wendler3
+551,5/8/2016,bench,Wendler2
+552,5/9/2016,low squat,Wendler1
+553,5/11/2016,overhead,Wendler4
+554,5/12/2016,deadlift,Wendler3
+555,5/15/2016,bench,Wendler2
+556,5/16/2016,low squat,Wendler1
+557,5/18/2016,overhead,Wendler4
+558,5/19/2016,deadlift,Wendler3
+559,5/21/2016,bench,Wendler2
+560,5/23/2016,low squat,Wendler1
+561,5/25/2016,overhead,Wendler4
+562,5/26/2016,deadlift,Wendler3
+563,5/29/2016,bench,Wendler2
+564,5/30/2016,low squat,Wendler1
+565,6/1/2016,overhead,Wendler4
+566,6/2/2016,deadlift,Wendler3
+567,6/5/2016,bench,Wendler2
+568,6/6/2016,low squat,Wendler1
+569,6/8/2016,overhead,Wendler4
+570,6/9/2016,deadlift,Wendler3
+571,6/12/2016,bench,Wendler2
+572,6/13/2016,low squat,Wendler1
+573,6/15/2016,overhead,Wendler4
+574,6/16/2016,deadlift,Wendler3
+575,6/19/2016,bench,Wendler2
+576,6/20/2016,low squat,Wendler1
+577,6/22/2016,overhead,Wendler4
+578,6/23/2016,deadlift,Wendler3
+579,6/26/2016,bench,Wendler2
+580,6/27/2016,low squat,Wendler1
+581,6/29/2016,overhead,Wendler4
+582,6/30/2016,deadlift,Wendler3
+583,7/3/2016,bench,Wendler2
+584,7/4/2016,low squat,Wendler1
+585,7/6/2016,overhead,Wendler4
+586,7/7/2016,deadlift,Wendler3
+587,7/10/2016,bench,Wendler2
+588,7/11/2016,low squat,Wendler1
+589,7/13/2016,overhead,Wendler4
+590,7/14/2016,deadlift,Wendler3
+591,7/16/2016,bench,Wendler2
+592,7/17/2016,low squat,Wendler1
+593,7/18/2016,overhead,Wendler4
+594,7/20/2016,deadlift,Wendler3
+595,7/23/2016,bench,Wendler2
+596,7/25/2016,low squat,Wendler1
+597,7/27/2016,overhead,Wendler4
+598,7/28/2016,deadlift,Wendler3
+599,7/30/2016,bench,Wendler2
+600,7/31/2016,low squat,Wendler1
+601,8/1/2016,overhead,Wendler4
+602,8/2/2016,deadlift,Wendler3
+603,8/4/2016,bench,Wendler2
+604,8/5/2016,low squat,Wendler1
+605,8/6/2016,overhead,Wendler4
+606,8/7/2016,deadlift,Wendler3
+607,8/8/2016,low squat,Wendler1
+608,8/8/2016,bench,Wendler2
+609,8/12/2016,deadlift,Wendler3
+610,8/12/2016,overhead,Wendler4
+611,8/15/2016,low squat,Wendler1
+612,8/15/2016,bench,Wendler2
+613,8/19/2016,deadlift,Wendler3
+614,8/19/2016,overhead,Wendler4
+615,8/22/2016,low squat,Wendler1
+616,8/22/2016,bench,Wendler2
+617,8/26/2016,deadlift,Wendler3
+618,8/26/2016,overhead,Wendler4
+619,8/29/2016,low squat,Wendler1
+620,8/29/2016,bench,Wendler2
+621,9/1/2016,deadlift,Wendler1
+622,9/1/2016,overhead,Wendler2
+623,9/5/2016,low squat,Wendler3
+624,9/5/2016,bench,Wendler4
+625,9/9/2016,deadlift,Wendler1
+626,9/9/2016,overhead,Wendler2
+627,9/12/2016,low squat,Wendler3
+628,9/12/2016,bench,Wendler4
+629,9/16/2016,deadlift,Wendler1
+630,9/16/2016,overhead,Wendler2
+631,9/19/2016,low squat,Wendler3
+632,9/19/2016,bench,Wendler4
+633,9/23/2016,deadlift,Wendler1
+634,9/23/2016,overhead,Wendler2
+635,9/26/2016,low squat,Wendler3
+636,9/26/2016,bench,Wendler4
+637,9/30/2016,deadlift,Wendler1
+638,9/30/2016,overhead,Wendler2
+639,10/3/2016,low squat,Wendler3
+640,10/3/2016,bench,Wendler4
+641,10/7/2016,deadlift,Wendler1
+642,10/7/2016,overhead,Wendler2
+643,10/10/2016,low squat,Wendler3
+644,10/10/2016,bench,Wendler4
+645,10/14/2016,deadlift,Wendler1
+646,10/14/2016,overhead,Wendler2
+647,10/17/2016,low squat,Wendler3
+648,10/17/2016,bench,Wendler4
+649,10/21/2016,deadlift,Wendler1
+650,10/21/2016,overhead,Wendler2
+651,10/24/2016,low squat,Wendler3
+652,10/24/2016,bench,Wendler4
+653,10/28/2016,deadlift,Wendler1
+654,10/28/2016,overhead,Wendler2
+655,10/31/2016,low squat,Wendler3
+656,10/31/2016,bench,Wendler4
+657,11/4/2016,deadlift,Wendler1
+658,11/4/2016,overhead,Wendler2
+659,11/7/2016,low squat,Wendler3
+660,11/7/2016,bench,Wendler4
+661,11/11/2016,deadlift,Wendler1
+662,11/11/2016,overhead,Wendler1
+663,11/14/2016,deadlift,Wendler1
+664,11/14/2016,overhead,Wendler2
+665,11/18/2016,low squat,Wendler3
+666,11/18/2016,bench,Wendler4
+667,11/21/2016,deadlift,Wendler1
+668,11/21/2016,overhead,Wendler2
+669,11/25/2016,low squat,Wendler3
+670,11/25/2016,bench,Wendler4
+671,11/28/2016,deadlift,Wendler1
+672,11/28/2016,overhead,Wendler2
+673,12/2/2016,low squat,Wendler3
+674,12/2/2016,bench,Wendler4
+675,12/5/2016,deadlift,Wendler1
+676,12/5/2016,overhead,Wendler2
+677,12/9/2016,low squat,Wendler3
+678,12/9/2016,bench,Wendler4
+679,12/12/2016,bench,Wendler1
+680,12/12/2016,low squat,Wendler1
+681,12/16/2016,deadlift,Wendler1
+682,12/16/2016,overhead,Wendler1
+683,12/19/2016,bench,Wendler2
+684,12/19/2016,low squat,Wendler2
+685,12/22/2016,deadlift,Wendler2
+686,12/22/2016,overhead,Wendler2
+687,12/26/2016,bench,Wendler3
+688,12/26/2016,low squat,Wendler3
+689,12/29/2016,deadlift,Wendler3
+690,12/29/2016,overhead,Wendler3
+691,1/1/2017,bench,Wendler4
+692,1/1/2017,low squat,Wendler4
+693,1/4/2017,deadlift,Wendler4
+694,1/4/2017,overhead,Wendler4
+695,1/8/2017,bench,Wendler1
+696,1/8/2017,low squat,Wendler1
+697,1/11/2017,deadlift,Wendler1
+698,1/11/2017,overhead,Wendler1
+699,1/16/2017,bench,Wendler2
+700,1/16/2017,low squat,Wendler2
+701,1/19/2017,deadlift,Wendler2
+702,1/19/2017,overhead,Wendler2
+703,1/23/2017,bench,Wendler3
+704,1/23/2017,low squat,Wendler3
+705,1/26/2017,deadlift,Wendler3
+706,1/26/2017,overhead,Wendler3
+707,1/29/2017,bench,Wendler4
+708,1/29/2017,low squat,Wendler4
+709,2/1/2017,deadlift,Wendler4
+710,2/1/2017,overhead,Wendler4
+711,2/5/2017,bench,Wendler1
+712,2/5/2017,low squat,Wendler1
+713,2/8/2017,deadlift,Wendler1
+714,2/8/2017,overhead,Wendler1
+715,2/12/2017,bench,Wendler2
+716,2/12/2017,low squat,Wendler2
+717,2/15/2017,deadlift,Wendler2
+718,2/15/2017,overhead,Wendler2
+719,2/19/2017,bench,Wendler3
+720,2/19/2017,low squat,Wendler3
+721,2/22/2017,deadlift,Wendler3
+722,2/22/2017,overhead,Wendler3
+723,2/26/2017,bench,Wendler4
+724,2/26/2017,low squat,Wendler4
+725,3/1/2017,deadlift,Wendler4
+726,3/1/2017,overhead,Wendler4
+727,3/5/2017,bench,Wendler1
+728,3/5/2017,low squat,Wendler1
+729,3/8/2017,deadlift,Wendler1
+730,3/8/2017,overhead,Wendler1
+731,3/12/2017,bench,Wendler2
+732,3/12/2017,low squat,Wendler2
+733,3/14/2017,deadlift,Wendler2
+734,3/14/2017,overhead,Wendler2
+735,3/19/2017,bench,Wendler3
+736,3/19/2017,low squat,Wendler3
+737,3/22/2017,deadlift,Wendler3
+738,3/22/2017,overhead,Wendler3
+739,3/26/2017,bench,Wendler4
+740,3/26/2017,low squat,Wendler4
+741,3/29/2017,deadlift,Wendler4
+742,3/29/2017,overhead,Wendler4
+743,4/2/2017,bench,Wendler1
+744,4/2/2017,low squat,Wendler1
+745,4/4/2017,deadlift,Wendler1
+746,4/4/2017,overhead,Wendler1
+747,4/10/2017,bench,Wendler2
+748,4/10/2017,low squat,Wendler2
+749,4/13/2017,deadlift,Wendler2
+750,4/13/2017,overhead,Wendler2
+751,4/17/2017,bench,Wendler3
+752,4/17/2017,low squat,Wendler3
+753,4/21/2017,deadlift,Wendler3
+754,4/21/2017,overhead,Wendler3
+755,4/24/2017,bench,Wendler4
+756,4/24/2017,low squat,Wendler4
+757,4/28/2017,deadlift,Wendler4
+758,4/28/2017,overhead,Wendler4
+759,5/1/2017,bench,Wendler1
+760,5/1/2017,low squat,Wendler1
+761,5/5/2017,deadlift,Wendler1
+762,5/5/2017,overhead,Wendler1
+763,5/8/2017,bench,Wendler2
+764,5/8/2017,low squat,Wendler2
+765,5/12/2017,deadlift,Wendler2
+766,5/12/2017,overhead,Wendler2
+767,5/15/2017,bench,Wendler3
+768,5/15/2017,low squat,Wendler3
+769,5/17/2017,deadlift,Wendler3
+770,5/17/2017,overhead,Wendler3
+771,5/22/2017,bench,Wendler4
+772,5/22/2017,low squat,Wendler4
+773,5/24/2017,deadlift,Wendler4
+774,5/24/2017,overhead,Wendler4
+775,5/29/2017,bench,Wendler1
+776,5/29/2017,low squat,Wendler1
+777,6/1/2017,deadlift,Wendler1
+778,6/1/2017,overhead,Wendler1
+779,6/5/2017,bench,Wendler2
+780,6/5/2017,low squat,Wendler2
+781,6/8/2017,deadlift,Wendler2
+782,6/8/2017,overhead,Wendler2
+783,6/12/2017,bench,Wendler3
+784,6/12/2017,low squat,Wendler3
+785,6/15/2017,deadlift,Wendler3
+786,6/15/2017,overhead,Wendler3
+787,6/19/2017,bench,Wendler4
+788,6/19/2017,low squat,Wendler4
+789,6/22/2017,deadlift,Wendler4
+790,6/22/2017,overhead,Wendler4
+791,6/23/2017,deadlift,Wendler1
+792,6/23/2017,overhead,Wendler1
+793,6/26/2017,bench,Wendler1
+794,6/26/2017,low squat,Wendler1
+795,7/3/2017,bench,Wendler2
+796,7/3/2017,low squat,Wendler2
+797,7/6/2017,deadlift,Wendler2
+798,7/6/2017,overhead,Wendler2
+799,7/10/2017,bench,Wendler3
+800,7/10/2017,low squat,Wendler3
+801,7/13/2017,deadlift,Wendler3
+802,7/13/2017,overhead,Wendler3
+803,7/17/2017,bench,Wendler4
+804,7/17/2017,low squat,Wendler4
+805,7/20/2017,deadlift,Wendler4
+806,7/20/2017,overhead,Wendler4
+807,7/24/2017,bench,Wendler1
+808,7/24/2017,low squat,Wendler1
+809,7/27/2017,deadlift,Wendler1
+810,7/27/2017,overhead,Wendler1
+811,7/31/2017,bench,Wendler2
+812,7/31/2017,low squat,Wendler2
+813,8/3/2017,deadlift,Wendler2
+814,8/3/2017,overhead,Wendler2
+815,8/7/2017,bench,Wendler3
+816,8/7/2017,low squat,Wendler3
+817,8/10/2017,deadlift,Wendler3
+818,8/10/2017,overhead,Wendler3
+819,8/14/2017,bench,Wendler4
+820,8/14/2017,low squat,Wendler4
+821,8/17/2017,deadlift,Wendler4
+822,8/17/2017,overhead,Wendler4
