@@ -6,7 +6,7 @@ class CreateVisits < ActiveRecord::Migration[5.1]
       # pattern is:
       # t.data_type :column_name, options: comma_seporated
       t.datetime :date, null: false
-      t.string :type, null: false
+      t.string :type_name, null: false
       t.string :program, null: false
 
       t.timestamps

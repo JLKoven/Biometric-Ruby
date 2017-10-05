@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20171005151857) do
 
   create_table "visits", force: :cascade do |t|
     t.datetime "date", null: false
-    t.string "type", null: false
+    t.string "type_name", null: false
     t.string "program", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
