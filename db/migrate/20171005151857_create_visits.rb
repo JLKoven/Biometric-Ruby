@@ -1,0 +1,13 @@
+class CreateVisits < ActiveRecord::Migration[5.1]
+  def change
+    create_table :visits do |t|
+      # pattern is:
+      # t.data_type :column_name, options: comma_seporated
+      t.datetime :date, null: false
+      t.string :type, null: false
+      t.string :program, null: false
+
+      t.timestamps
+    end
+  end
+end
