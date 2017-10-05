@@ -23,6 +23,7 @@ csv_with_class_names.each do |class_name, csv_file|
   class_name = class_name.to_s.constantize
   csv_text = File.read(Rails.root.join('db', csv_file))
   csv = CSV.parse(csv_text, headers: true)
+  
   csv.each do |row|
     data = row.to_h
     data['date'] = Date.strptime(data['date'], "%m/%d/%Y") if data['date']
