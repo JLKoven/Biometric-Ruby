@@ -1,12 +1,12 @@
 class ExerciseSessionController < ApplicationController
   def index
-    @exerciseSessions = ExerciseSession.all
+    @exercise_sessions = ExerciseSession.all
   end
 
   def show
-    @exerciseSessions = ExerciseSession.find(params[:id])
+    @exercise_sessions = ExerciseSession.find(params[:id])
     respond_to do |format|
-      format.json {render json: @exerciseSession}
+      format.json {render json: @exercise_session}
     end
   end
 end

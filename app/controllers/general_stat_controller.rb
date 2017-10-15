@@ -1,12 +1,12 @@
 class GeneralStatController < ApplicationController
   def index
-    @generalStats = GeneralStat.all
+    @general_stats = GeneralStat.all
   end
 
   def show
-    @generalStats = GeneralStat.find(params[:id])
+    @general_stats = GeneralStat.find(params[:id])
     respond_to do |format|
-      format.json {render json: @generalStat}
+      format.json {render json: @general_stat}
     end
   end
 end

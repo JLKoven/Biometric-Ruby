@@ -1,12 +1,12 @@
 class WeightSetController < ApplicationController
   def index
-    @weightSets = WeightSet.all
+    @weight_sets = WeightSet.all
   end
 
   def show
-    @weightSets = WeightSet.find(params[:id])
+    @weight_sets = WeightSet.find(params[:id])
     respond_to do |format|
-      format.json {render json: @weightSet}
+      format.json {render json: @weight_set}
     end
   end
 end
