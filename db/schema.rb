@@ -15,30 +15,10 @@ ActiveRecord::Schema.define(version: 20171005151857) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "exercise_session", force: :cascade do |t|
-    t.string "user_id", null: false
+  create_table "visits", force: :cascade do |t|
     t.datetime "date", null: false
     t.string "type_name", null: false
     t.string "program", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-  
-  create_table "general_stat", force: :cascade do |t|
-    t.string "user_id", null: false
-    t.datetime "date", null: false
-    t.string "weight", null: false
-    t.string "weight_avg", null: false
-    t.string "cal", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-  
-   create_table "weight_set", force: :cascade do |t|
-    t.string "user_id", null: false
-    t.string "weight", null: false
-    t.string "reps", null: false
-    t.string "visit_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
