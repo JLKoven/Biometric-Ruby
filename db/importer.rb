@@ -1,9 +1,9 @@
 require 'csv'
 
 csv_with_class_names = {
-  Visit: "visits.csv",
-  DateItem: "dateItem.csv",
-  Set: "sets.csv"
+  ExerciseSession: "exercise_session.csv",
+  GeneralStat: "general_stat.csv",
+  WeightSet: "weight_set.csv"
 }
 
 csv_with_class_names.each do |class_name, csv_file|
