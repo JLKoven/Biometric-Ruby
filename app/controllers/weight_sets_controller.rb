@@ -4,9 +4,6 @@ class WeightSetsController < ApplicationController
   end
 
   def show
-    @weight_sets = WeightSet.find(params[:id])
-    respond_to do |format|
-      format.json {render json: @weight_set}
-    end
+    @weight_set = WeightSet.find(params[:id])
   end
 end

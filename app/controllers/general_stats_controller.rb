@@ -4,9 +4,6 @@ class GeneralStatsController < ApplicationController
   end
 
   def show
-    @general_stats = GeneralStat.find(params[:id])
-    respond_to do |format|
-      format.json {render json: @general_stat}
-    end
+    @general_stat = GeneralStat.find(params[:id])
   end
 end

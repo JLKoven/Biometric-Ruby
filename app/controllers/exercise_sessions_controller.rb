@@ -4,9 +4,6 @@ class ExerciseSessionsController < ApplicationController
   end
 
   def show
-    @exercise_sessions = ExerciseSession.find(params[:id])
-    respond_to do |format|
-      format.json {render json: @exercise_session}
-    end
+    @exercise_session = ExerciseSession.find(params[:id])
   end
 end
