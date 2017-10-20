@@ -15,7 +15,11 @@ ActiveRecord::Schema.define(version: 20171020034842) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+<<<<<<< HEAD
   create_table "exercise_sessions", force: :cascade do |t|
+=======
+  create_table "visits", force: :cascade do |t|
+>>>>>>> 7e4ef038886b8eaa93f4a976e3daef727b486319
     t.datetime "date", null: false
     t.string "type_name", null: false
     t.string "program", null: false
@@ -24,6 +28,7 @@ ActiveRecord::Schema.define(version: 20171020034842) do
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_exercise_sessions_on_user_id"
   end
+<<<<<<< HEAD
 
   create_table "general_stats", force: :cascade do |t|
     t.datetime "date", null: false
@@ -63,5 +68,7 @@ ActiveRecord::Schema.define(version: 20171020034842) do
     t.index ["exercise_session_id"], name: "index_weight_sets_on_exercise_session_id"
     t.index ["user_id"], name: "index_weight_sets_on_user_id"
   end
+=======
+>>>>>>> 7e4ef038886b8eaa93f4a976e3daef727b486319
 
 end
