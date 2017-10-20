@@ -1,0 +1,5 @@
+Waaaaaaaaaaugh<br>
+<% @weight_sets.each do |weight_set| %>
+  <%= weight_set.weight %><br>
+  <%= link_to weight_set.date, weight_set_path(weight_set) %><br>
+<% end %>

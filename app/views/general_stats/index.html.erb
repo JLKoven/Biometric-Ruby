@@ -1,0 +1,5 @@
+Blahhh<br>
+<% @general_stats.each do |general_stat| %>
+  <%= general_stat.id %><br>
+  <%= link_to general_stat.date, general_stat_path(general_stat) %><br>
+<% end %>

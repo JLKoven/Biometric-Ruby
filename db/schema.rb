@@ -10,17 +10,65 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171005151857) do
+ActiveRecord::Schema.define(version: 20171020034842) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+<<<<<<< HEAD
+  create_table "exercise_sessions", force: :cascade do |t|
+=======
   create_table "visits", force: :cascade do |t|
+>>>>>>> 7e4ef038886b8eaa93f4a976e3daef727b486319
     t.datetime "date", null: false
     t.string "type_name", null: false
     t.string "program", null: false
+    t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_exercise_sessions_on_user_id"
   end
+<<<<<<< HEAD
+
+  create_table "general_stats", force: :cascade do |t|
+    t.datetime "date", null: false
+    t.string "weight", null: false
+    t.string "weight_avg", null: false
+    t.string "cal", null: false
+    t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_general_stats_on_user_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer "sign_in_count", default: 0, null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.inet "current_sign_in_ip"
+    t.inet "last_sign_in_ip"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  end
+
+  create_table "weight_sets", force: :cascade do |t|
+    t.string "weight", null: false
+    t.string "reps", null: false
+    t.bigint "exercise_session_id"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["exercise_session_id"], name: "index_weight_sets_on_exercise_session_id"
+    t.index ["user_id"], name: "index_weight_sets_on_user_id"
+  end
+=======
+>>>>>>> 7e4ef038886b8eaa93f4a976e3daef727b486319
 
 end
