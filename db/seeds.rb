@@ -13,6 +13,14 @@
 
 require 'csv'
 
+john = User.new
+john.email = 'john.koven@gmail.com'
+john.password = 'kenisthebest'
+john.password_confirmation = 'kenisthebest'
+john.save! unless !User.where(email: john.email).empty?
+
+puts "Created John"
+
 csv_with_class_names = {
   ExerciseSession: "exercise_session.csv",
   GeneralStat: "general_stat.csv",
@@ -23,10 +31,11 @@ csv_with_class_names.each do |class_name, csv_file|
   class_name = class_name.to_s.constantize
   csv_text = File.read(Rails.root.join('db', csv_file))
   csv = CSV.parse(csv_text, headers: true)
-  
+
   csv.each do |row|
     data = row.to_h
     data['date'] = Date.strptime(data['date'], "%m/%d/%Y") if data['date']
     class_name.find_or_create_by(data)
   end
+  puts "Seeded #{class_name}s"
 end

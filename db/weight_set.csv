@@ -1,4 +1,4 @@
-id,user_id,weight,reps,visit_id
+id,user_id,weight,reps,exercise_session_id
 1,1,185,7,1
 2,1,185,7,1
 3,1,185,7,1
