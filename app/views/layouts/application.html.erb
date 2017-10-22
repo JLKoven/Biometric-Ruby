@@ -16,16 +16,23 @@ This is on every page
 
   <body>
 
-<% #link_to("Sign up", "users/sign_up/"), this is how we'd do it without a method hahaha
-# = <-- this equal will cause problems because it will try to render whatever's inside,
-# and if it's a comment, nothing happens LOL
- %>
-<%= link_to("Sign up", new_user_registration_path) %>
-<!-- THIS IS BETTER THAN A <a href="blargh" /> -->
-<!-- link_to(text, url, options) we can add a third 'options' param/> -->
+    <div>
+     <ul>
+       <% if current_user %>
+         <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+         <!-- THIS IS BETTER THAN A <a href="blargh" /> -->
+         <!-- link_to(text, url, options) we can add a third 'options' param/> -->
+       <% else %>
+         <li><%= link_to "Sign Up", new_user_registration_path %></li>
+         <% #link_to("Sign up", "users/sign_up/"), this is how we'd do it without a method hahaha
+      # = <-- this equal will cause problems because it will try to render whatever's inside,
+      # and if it's a comment, nothing happens LOL
+       %>
+         <li><%= link_to "Sign In", new_user_session_path %></li>
+       <% end %>
+     </ul>
+   </div>
 
-|| <%= link_to("Sign in", new_user_session_path) %>
-|| <%= link_to("Sign out", destroy_user_session_path, method: :delete) %>
 
     <%= yield %>
     <!--
