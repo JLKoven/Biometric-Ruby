@@ -4,6 +4,6 @@ class ApplicationRecord < ActiveRecord::Base
   #used in seeds file
   def self.match_primary_key_sequence
     sql = "SELECT pg_catalog.setval(pg_get_serial_sequence('#{table_name}', 'id'), MAX(id)) FROM #{table_name};"
-    ActiveRecord::Base.connection.execute(sql)
+    connection.execute(sql)
   end
 end
