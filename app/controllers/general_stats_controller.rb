@@ -4,7 +4,8 @@ class GeneralStatsController < ApplicationController
   # GET /general_stats
   # GET /general_stats.json
   def index
-    @general_stats = GeneralStat.all
+#    @general_stats = GeneralStat.all
+@general_stats = GeneralStat.where(user_id: current_user.id)
   end
 
   # GET /general_stats/1

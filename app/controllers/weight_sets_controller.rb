@@ -1,10 +1,11 @@
 class WeightSetsController < ApplicationController
   before_action :set_weight_set, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /weight_sets
   # GET /weight_sets.json
   def index
-    @weight_sets = WeightSet.all
+    @weight_sets = WeightSet.where(user_id: current_user.id)
   end
 
   # GET /weight_sets/1

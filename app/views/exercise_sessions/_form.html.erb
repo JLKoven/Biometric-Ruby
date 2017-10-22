@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= form.label :date %>
-    <%= form.text_field :date, id: :exercise_session_date %>
+    <%= form.date_field :date, id: :exercise_session_date %>
   </div>
 
   <div class="field">
@@ -26,10 +26,7 @@
     <%= form.text_field :program, id: :exercise_session_program %>
   </div>
 
-  <div class="field">
-    <%= form.label :user_id %>
-    <%= form.text_field :user_id, id: :exercise_session_user_id %>
-  </div>
+
 
   <div class="actions">
     <%= form.submit %>

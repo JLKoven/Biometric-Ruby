@@ -1,10 +1,13 @@
 class ExerciseSessionsController < ApplicationController
   before_action :set_exercise_session, only: [:show, :edit, :update, :destroy]
 
+#make sure this works if nobody is logged in
+  before_action :authenticate_user!
+
   # GET /exercise_sessions
   # GET /exercise_sessions.json
   def index
-    @exercise_sessions = ExerciseSession.all
+    @exercise_sessions = ExerciseSession.where(user_id: current_user.id)
   end
 
   # GET /exercise_sessions/1
@@ -25,6 +28,8 @@ class ExerciseSessionsController < ApplicationController
   # POST /exercise_sessions.json
   def create
     @exercise_session = ExerciseSession.new(exercise_session_params)
+    @exercise_session.user_id = current_user.id
+
 
     respond_to do |format|
       if @exercise_session.save
