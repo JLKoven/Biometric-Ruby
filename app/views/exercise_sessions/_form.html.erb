@@ -1,0 +1,37 @@
+<%= form_with(model: exercise_session, local: true) do |form| %>
+  <% if exercise_session.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(exercise_session.errors.count, "error") %> prohibited this exercise_session from being saved:</h2>
+
+      <ul>
+      <% exercise_session.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.text_field :date, id: :exercise_session_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type_name %>
+    <%= form.text_field :type_name, id: :exercise_session_type_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :program %>
+    <%= form.text_field :program, id: :exercise_session_program %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id, id: :exercise_session_user_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,9 +1,24 @@
-I am a show! Piplup
-<p></p>
-<p></p> ID: <%= @exercise_session.id %>
-<p></p> User ID: <%= @exercise_session.user_id %>
-<p></p> Date: <%= @exercise_session.date %>
-<p></p> Type: <%= @exercise_session.type_name %>
-<p></p> Program: <%= @exercise_session.program %>
-<p></p>
+<p id="notice"><%= notice %></p>
 
+<p>
+  <strong>Date:</strong>
+  <%= @exercise_session.date %>
+</p>
+
+<p>
+  <strong>Type name:</strong>
+  <%= @exercise_session.type_name %>
+</p>
+
+<p>
+  <strong>Program:</strong>
+  <%= @exercise_session.program %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @exercise_session.user %>
+</p>
+
+<%= link_to 'Edit', edit_exercise_session_path(@exercise_session) %> |
+<%= link_to 'Back', exercise_sessions_path %>

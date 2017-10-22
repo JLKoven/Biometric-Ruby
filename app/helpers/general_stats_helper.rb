@@ -1,0 +1,2 @@
+module GeneralStatsHelper
+end

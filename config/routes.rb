@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :general_stats
+  resources :weight_sets
+  resources :exercise_sessions
   devise_for :users
   root 'exercise_sessions#index'#we'll make this a landing page later
   resources :exercise_sessions, only: [:index, :show]

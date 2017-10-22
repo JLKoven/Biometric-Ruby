@@ -10,27 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171020034842) do
+ActiveRecord::Schema.define(version: 20171022203310) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "exercise_sessions", force: :cascade do |t|
-    t.datetime "date", null: false
-    t.string "type_name", null: false
-    t.string "program", null: false
-    t.bigint "user_id", null: false
+    t.datetime "date"
+    t.string "type_name"
+    t.string "program"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_exercise_sessions_on_user_id"
   end
 
   create_table "general_stats", force: :cascade do |t|
-    t.datetime "date", null: false
-    t.string "weight", null: false
-    t.string "weight_avg", null: false
-    t.string "cal", null: false
-    t.bigint "user_id", null: false
+    t.datetime "date"
+    t.string "weight"
+    t.string "weight_avg"
+    t.string "cal"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_general_stats_on_user_id"
@@ -54,8 +54,8 @@ ActiveRecord::Schema.define(version: 20171020034842) do
   end
 
   create_table "weight_sets", force: :cascade do |t|
-    t.string "weight", null: false
-    t.string "reps", null: false
+    t.string "weight"
+    t.string "reps"
     t.bigint "exercise_session_id"
     t.bigint "user_id"
     t.datetime "created_at", null: false
@@ -64,4 +64,7 @@ ActiveRecord::Schema.define(version: 20171020034842) do
     t.index ["user_id"], name: "index_weight_sets_on_user_id"
   end
 
+  add_foreign_key "exercise_sessions", "users"
+  add_foreign_key "general_stats", "users"
+  add_foreign_key "weight_sets", "users"
 end

@@ -1,9 +1,29 @@
-I am a show! Torchic.
-<p></p>
-<p></p> ID: <%= @general_stat.id %>
-<p></p> User ID: <%= @general_stat.user_id %>
-<p></p> Date: <%= @general_stat.date %>
-<p></p> Weight: <%= @general_stat.weight %>
-<p></p> Average weight for the prior 7 days: <%= @general_stat.weight_avg %>
-<p></p> Kilocalories consumed this day: <%= @general_stat.cal %>
-<p></p>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @general_stat.date %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @general_stat.weight %>
+</p>
+
+<p>
+  <strong>Weight avg:</strong>
+  <%= @general_stat.weight_avg %>
+</p>
+
+<p>
+  <strong>Cal:</strong>
+  <%= @general_stat.cal %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @general_stat.user %>
+</p>
+
+<%= link_to 'Edit', edit_general_stat_path(@general_stat) %> |
+<%= link_to 'Back', general_stats_path %>

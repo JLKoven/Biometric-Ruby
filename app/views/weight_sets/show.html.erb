@@ -1,8 +1,24 @@
-I am a show! Rowlet
-<p></p>
-<p></p> ID: <%= @weight_set.id %>
-<p></p> User ID: <%= @weight_set.user_id %>
-<p></p> Weight: <%= @weight_set.weight %>
-<p></p> Reps: <%= @weight_set.reps %>
-<p></p> Exercise Session ID: <%= @weight_set.exercise_session_id %>
-<p></p>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @weight_set.weight %>
+</p>
+
+<p>
+  <strong>Reps:</strong>
+  <%= @weight_set.reps %>
+</p>
+
+<p>
+  <strong>Exercise session:</strong>
+  <%= @weight_set.exercise_session %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @weight_set.user %>
+</p>
+
+<%= link_to 'Edit', edit_weight_set_path(@weight_set) %> |
+<%= link_to 'Back', weight_sets_path %>
