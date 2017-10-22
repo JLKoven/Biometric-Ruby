@@ -37,5 +37,8 @@ csv_with_class_names.each do |class_name, csv_file|
     data['date'] = Date.strptime(data['date'], "%m/%d/%Y") if data['date']
     class_name.find_or_create_by(data)
   end
+
+  class_name.match_primary_key_sequence
+
   puts "Seeded #{class_name}s"
 end
