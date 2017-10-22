@@ -1,5 +1,5 @@
 Waaaaaaaaaaugh<br>
 <% @weight_sets.each do |weight_set| %>
   <%= weight_set.weight %><br>
-  <%= link_to weight_set.date, weight_set_path(weight_set) %><br>
+  <%= link_to weight_set.exercise_session_id, weight_set_path(weight_set) %><br>
 <% end %>

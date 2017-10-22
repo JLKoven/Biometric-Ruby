@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<!--
+This is on every page
+-->
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -13,7 +16,20 @@
 
   <body>
 
+<% #link_to("Sign up", "users/sign_up/"), this is how we'd do it without a method hahaha
+# = <-- this equal will cause problems because it will try to render whatever's inside,
+# and if it's a comment, nothing happens LOL
+ %>
+<%= link_to("Sign up", new_user_registration_path) %>
+<!-- THIS IS BETTER THAN A <a href="blargh" /> -->
+<!-- link_to(text, url, options) we can add a third 'options' param/> -->
+
+|| <%= link_to("Sign in", new_user_session_path) %>
+|| <%= link_to("Sign out", destroy_user_session_path, method: :delete) %>
+
     <%= yield %>
+    <!--
+yield gets replaced with whatever *.erb file the router is currently 'pointing' to/at   -->
     <%= javascript_include_tag "application" %>
   </body>
 </html>
