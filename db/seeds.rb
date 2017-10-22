@@ -37,11 +37,8 @@ csv_with_class_names.each do |class_name, csv_file|
     data['date'] = Date.strptime(data['date'], "%m/%d/%Y") if data['date']
     class_name.find_or_create_by(data)
   end
+
+  class_name.match_primary_key_sequence
+
   puts "Seeded #{class_name}s"
 end
-
-['exercise_sessions', 'general_stats', 'weight_sets'].each do |table_name|
-  sql = "SELECT pg_catalog.setval(pg_get_serial_sequence('#{table_name}', 'id'), MAX(id)) FROM #{table_name};"
-  results = ActiveRecord::Base.connection.execute(sql)
-end
-puts "reset ids for tables"
