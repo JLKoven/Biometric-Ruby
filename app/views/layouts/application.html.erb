@@ -31,6 +31,16 @@ This is on every page
          <li><%= link_to "Sign In", new_user_session_path %></li>
        <% end %>
      </ul>
+      <!-- for Ken: this is supposed to be part of something on every page: 
+it'll allow anyone to readily switch to the 'general stats', 'exercise sessions' and 'weight sets' links-->
+      <br>
+       <ul>
+         <!-- link_to(text, url, options) we can add a third 'options' param/> -->
+         <li><%= link_to "General Stats", general_stats %></li>
+         <li><%= link_to "Exercise Sessions", exercise_sessions %></li>
+         <li><%= link_to "Weight Sets", weight_sets %></li>
+      </ul>
+<!-- end possibly broken/buggy code--> 
    </div>
 
 
