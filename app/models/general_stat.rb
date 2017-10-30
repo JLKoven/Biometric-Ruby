@@ -13,12 +13,12 @@ class GeneralStat < ApplicationRecord
 private
 
   def total_weight
-    self.class.last_number_stats(@limit, date).inject(0) do |total, stat|
+    self.class.previous_stats(@limit, date).inject(0) do |total, stat|
       total + stat.weight.to_f
     end + weight.to_f
   end
 
-  def self.last_number_stats(limit, date = DateTime.now)
+  def self.previous_stats(limit, date = DateTime.now)
     where("date < ?", date).select(:weight).limit(limit).order(date: :desc)
   end
 end
