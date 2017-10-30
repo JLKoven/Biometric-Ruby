@@ -21,7 +21,7 @@ private
 
   # fetches the last limit items from before the current item's date
   # generates the following sql:
-    # SELECT  "general_stats"."date", "general_stats"."weight" FROM "general_stats"
+    # SELECT  "general_stats"."weight" FROM "general_stats"
     # WHERE (date < '2017-09-09 00:00:00')
     # ORDER BY "general_stats"."date" DESC LIMIT $1  [["LIMIT", 6]]
   def self.previous_stats(limit, date = DateTime.now)
