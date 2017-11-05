@@ -26,6 +26,7 @@ class GeneralStatsController < ApplicationController
   # POST /general_stats.json
   def create
     @general_stat = GeneralStat.new(general_stat_params)
+    @general_stat.user_id = current_user.id
 
     respond_to do |format|
       if @general_stat.save
