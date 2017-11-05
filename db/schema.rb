@@ -16,9 +16,9 @@ ActiveRecord::Schema.define(version: 20171022191817) do
   enable_extension "plpgsql"
 
   create_table "exercise_sessions", force: :cascade do |t|
-    t.datetime "date"
-    t.string "type_name"
-    t.string "program"
+    t.datetime "date", null: false
+    t.string "type_name", null: false
+    t.string "program", null: false
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -26,10 +26,10 @@ ActiveRecord::Schema.define(version: 20171022191817) do
   end
 
   create_table "general_stats", force: :cascade do |t|
-    t.datetime "date"
-    t.string "weight"
+    t.datetime "date", null: false
+    t.string "weight", null: false
     t.string "weight_avg"
-    t.string "cal"
+    t.string "cal", null: false
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -54,17 +54,15 @@ ActiveRecord::Schema.define(version: 20171022191817) do
   end
 
   create_table "weight_sets", force: :cascade do |t|
-    t.string "weight"
-    t.string "reps"
+    t.string "weight", null: false
+    t.string "reps", null: false
     t.bigint "exercise_session_id"
-    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["exercise_session_id"], name: "index_weight_sets_on_exercise_session_id"
-    t.index ["user_id"], name: "index_weight_sets_on_user_id"
   end
 
   add_foreign_key "exercise_sessions", "users"
   add_foreign_key "general_stats", "users"
-  add_foreign_key "weight_sets", "users"
+  add_foreign_key "weight_sets", "exercise_sessions"
 end

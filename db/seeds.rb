@@ -35,6 +35,7 @@ csv_with_class_names.each do |class_name, csv_file|
   csv.each do |row|
     data = row.to_h
     data['date'] = Date.strptime(data['date'], "%m/%d/%Y") if data['date']
+    data.delete('user_id') if csv_file == "weight_set.csv"
     class_name.find_or_create_by(data)
   end
 
