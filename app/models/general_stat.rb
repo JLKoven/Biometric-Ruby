@@ -1,6 +1,10 @@
 class GeneralStat < ApplicationRecord
   belongs_to :user
 
+  validates_presence_of :date
+  validates_presence_of :weight
+  validates_presence_of :user_id
+
   before_save :calculate_average_weight
 
   LIMIT = 7
