@@ -4,7 +4,6 @@ class CreateWeightSets < ActiveRecord::Migration[5.1]
       t.string :weight, null: false
       t.string :reps, null: false
       t.references :exercise_session, foreign_key: true
-      t.references :user, foreign_key: true
 
       t.timestamps
     end
