@@ -6,7 +6,7 @@ class GeneralStat < ApplicationRecord
   DEFAULT_LIMIT = 7
 
   def calculate_average_weight(limit = DEFAULT_LIMIT)
-    @limit = limit - 1
+    @limit = limit
     self.weight_avg = (total_weight / limit).round(2)
   end
 
@@ -16,7 +16,7 @@ private
   def total_weight
     self.class.previous_stats(@limit, date).inject(0) do |total, stat|
       total + stat.weight.to_f
-    end + weight.to_f
+    end
   end
 
   # fetches the last limit items from before the current item's date
