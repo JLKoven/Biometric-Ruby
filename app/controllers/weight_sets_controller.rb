@@ -5,8 +5,23 @@ class WeightSetsController < ApplicationController
   # GET /weight_sets
   # GET /weight_sets.json
   def index
-    @weight_sets = WeightSet.where(user_id: current_user.id)
+    @weight_sets = current_user.weight_sets
+
+    #don't do this, this is silly
+#     @exercise_sessions = ExerciseSession.where(user: current_user)
+#     @weight_sets = []
+#     @exercise_sessions.each do |exercise_session|
+# #      for each weoghtgset in exercise_session.weight_sets {\
+# #        @weight_sets.push(weoghtgset.this)
+# #      }
+#         @weight_sets.push(exercise_session.weight_sets)
+#     end
+#     @weight_sets.flatten!
+#     #binding.pry
   end
+
+
+  #SELECT weight_set FROM weight_sets WHERE weight_ == current_user.id)
 
   # GET /weight_sets/1
   # GET /weight_sets/1.json
@@ -25,6 +40,7 @@ class WeightSetsController < ApplicationController
   # POST /weight_sets
   # POST /weight_sets.json
   def create
+#    binding.pry
     @weight_set = WeightSet.new(weight_set_params)
 
     respond_to do |format|
@@ -70,6 +86,6 @@ class WeightSetsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def weight_set_params
-      params.require(:weight_set).permit(:weight, :reps, :exercise_session, :user_id)
-    end
+      params.require(:weight_set).permit(:weight, :reps, :exercise_session_id)
+    end#HAHAHAHAHAHA
 end

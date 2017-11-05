@@ -23,7 +23,8 @@
 
   <div class="field">
     <%= form.label :exercise_session %>
-    <%= form.text_field :exercise_session, id: :weight_set_exercise_session %>
+
+      <%= form.collection_select(:exercise_session_id, current_user.exercise_sessions, :id, :date, prompt: true) %>
   </div>
 
 
