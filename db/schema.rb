@@ -10,19 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171022191817) do
+ActiveRecord::Schema.define(version: 20171121202214) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "exercise_programs", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "exercise_sessions", force: :cascade do |t|
     t.datetime "date", null: false
-    t.string "type_name", null: false
-    t.string "program", null: false
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "exercise_type_id"
+    t.bigint "exercise_program_id"
     t.index ["user_id"], name: "index_exercise_sessions_on_user_id"
+  end
+
+  create_table "exercise_types", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "general_stats", force: :cascade do |t|

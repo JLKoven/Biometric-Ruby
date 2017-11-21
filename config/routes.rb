@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :exercise_programs
+  resources :exercise_types
   resources :general_stats
   resources :weight_sets
   resources :exercise_sessions

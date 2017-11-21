@@ -1,0 +1,5 @@
+id,user_id,date,type_name,program
+1,1,5/10/2015,bench,initialFourSet
+2,1,5/22/2015,bench,initialFourSet
+3,1,6/7/2015,bench,initialFourSet
+4,1,6/15/2015,bench,initialFourSet

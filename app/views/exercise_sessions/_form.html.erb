@@ -17,6 +17,17 @@
   </div>
 
   <div class="field">
+    <%= form.label :exercise_type %>
+      <%= form.collection_select(:exercise_type_id, ExerciseType.all, :id, :name, prompt: true) %>
+  </div>
+
+  <div class="field">
+    <%= form.label :exercise_program %>
+      <%= form.collection_select(:exercise_program_id, ExerciseProgram.all, :id, :name, prompt: true) %>
+  </div>
+
+<!--
+  <div class="field">
     <%= form.label :type_name %>
     <%= form.text_field :type_name, id: :exercise_session_type_name %>
   </div>
@@ -25,7 +36,7 @@
     <%= form.label :program %>
     <%= form.text_field :program, id: :exercise_session_program %>
   </div>
-
+-->
 
 
   <div class="actions">

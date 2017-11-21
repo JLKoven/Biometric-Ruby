@@ -20,8 +20,8 @@
     <% @exercise_sessions.each do |exercise_session| %>
       <tr>
         <td><%= exercise_session.date %></td>
-        <td><%= exercise_session.type_name %></td>
-        <td><%= exercise_session.program %></td>
+        <td><%= exercise_session.exercise_type.name %></td>
+        <td><%= exercise_session.exercise_program.name %></td>
         <td><%= exercise_session.user.email %></td>
         <td><%= link_to 'Show', exercise_session %></td>
         <td><%= link_to 'Edit', edit_exercise_session_path(exercise_session) %></td>

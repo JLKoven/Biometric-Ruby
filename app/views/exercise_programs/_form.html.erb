@@ -1,0 +1,27 @@
+<%= form_with(model: exercise_program, local: true) do |form| %>
+  <% if exercise_program.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(exercise_program.errors.count, "error") %> prohibited this exercise_program from being saved:</h2>
+
+      <ul>
+      <% exercise_program.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :exercise_program_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description, id: :exercise_program_description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
