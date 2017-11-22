@@ -30,6 +30,8 @@ class ExerciseSessionsController < ApplicationController
     @exercise_session = ExerciseSession.new(exercise_session_params)
     @exercise_session.user_id = current_user.id
 
+    #binding.pry
+
 
     respond_to do |format|
       if @exercise_session.save
@@ -74,6 +76,6 @@ class ExerciseSessionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def exercise_session_params
-      params.require(:exercise_session).permit(:date, :type_name, :program, :user_id)
+      params.require(:exercise_session).permit(:date, :type_name, :program, :user_id, :exercise_type_id, :exercise_program_id)
     end
 end
