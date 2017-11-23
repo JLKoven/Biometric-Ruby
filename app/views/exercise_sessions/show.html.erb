@@ -7,12 +7,12 @@
 
 <p>
   <strong>Type name:</strong>
-  <%= ExerciseType.where(id: @exercise_session.exercise_type_id).first.name %>
+  <%= @exercise_session.exercise_type.name %>
 </p>
 
 <p>
   <strong>Program:</strong>
-  <%= ExerciseProgram.where(id: @exercise_session.exercise_program_id).first.name %>
+  <%= @exercise_session.exercise_program.name %>
 </p>
 
 
