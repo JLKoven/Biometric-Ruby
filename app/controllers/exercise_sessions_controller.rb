@@ -76,6 +76,6 @@ class ExerciseSessionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def exercise_session_params
-      params.require(:exercise_session).permit(:date, :type_name, :program, :user_id, :exercise_type_id, :exercise_program_id)
+      params.require(:exercise_session).permit(:date, :user_id, :exercise_type_id, :exercise_program_id)
     end
 end
