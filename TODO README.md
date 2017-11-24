@@ -1,42 +1,56 @@
 Quick todo: 
 
-1) I notice when I add weights, I can 'add average'. That's sub-ideal! In fact, I'm not sure it's something that should be parsed in from the CSV? The idea is that it's automatically calculated by the prior 7 entires. 
+1) Troubleshooting: if I 
+I] create a new type of exercise, and then 
+II] go to the sessions page, and either add a new session with newType, or edit an existing session to have newType 
+III] go to the exerciseType page, and delete this newType 
+IV] attempt to go to the sessions page 
+I receive the following message: 
+  BEGIN ERROR MESSAGE: 
+NoMethodError in ExerciseSessions#index
+Showing /home/john/biometric/app/views/exercise_sessions/index.html.erb where line #23 raised:
 
-2) I can edit fields such that I can give exercises and programs nonsense names. I don't think I like this! 
-
-3) I can add to exercise session just fine. But when I add to 'general stats', I get an error 'that user does not exist' 
-When I add to 'weight sets', I get 
-ActiveModel::UnknownAttributeError in WeightSetsController#create
-unknown attribute 'exercise_session' for WeightSet.
-
-Extracted source (around line #28):
+undefined method `name' for nil:NilClass
+Extracted source (around line #23):
+21
+22
+23
+24
+25
 26
-27
-28
-29
-30
-31
               
-  # POST /weight_sets.json
-  def create
-    @weight_set = WeightSet.new(weight_set_params)
-
-    respond_to do |format|
-      if @weight_set.save
+      <tr>
+        <td><%= exercise_session.date %></td>
+        <td><%= exercise_session.exercise_type.name %></td>
+        <td><%= exercise_session.exercise_program.name %></td>
+        <td><%= exercise_session.user.email %></td>
+        <td><%= link_to 'Show', exercise_session %></td>
 
 Rails.root: /home/john/biometric
 
-Application Trace: app/controllers/weight_sets_controller.rb:28:in `create'
+Application Trace | Framework Trace | Full Trace
+app/views/exercise_sessions/index.html.erb:23:in `block in _app_views_exercise_sessions_index_html_erb___3796906742961664939_70237110229180'
+app/views/exercise_sessions/index.html.erb:20:in `_app_views_exercise_sessions_index_html_erb___3796906742961664939_70237110229180'
+Request
 
+Parameters:
+None 
+  END ERROR MESSAGE: 
+
+
+2) I want to try investigating to see if all exercise sessions created by one user are accessible/editable by everyone else (they shouldn't be. There should be some baseline exercises that everyone gets, then everyone has their own data for the schem) 
+
+3) when I edit a session, it goes to the bottom of the page. How do I stop this? I want entries displayed organized by their date, I think
+
+ 
 Goals: 
+
+-maybe prevent negative numbers 
+-maybe we should add a set limit to how many entries show up on a page...?
 
 -clean up UI 
 --add prettier error handling 
 --add more links 
-
--implement 'database persistence'(?) 
-
--implement 'import CSV' 
 
 -implement 'set goal' function 
 --future: maybe implement machine learning? 
