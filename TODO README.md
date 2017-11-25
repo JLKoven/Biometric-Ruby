@@ -37,8 +37,13 @@ Parameters:
 None
   END ERROR MESSAGE:
 
+This is bad and I don't want it to stay this way.
 
-2) I want to try investigating to see if all exercise sessions created by one user are accessible/editable by everyone else (they shouldn't be. There should be some baseline exercises that everyone gets, then everyone has their own data for the schem)
+
+
+
+2) I want to try investigating to see if all exercise sessions created by one user are accessible/editable by everyone else (they shouldn't be. There should be some baseline exercises that everyone gets, then everyone has their own data for the schema)
+
 
 3) when I edit a session, it goes to the bottom of the page. How do I stop this? I want entries displayed organized by their date, I think
 
