@@ -5,6 +5,10 @@ class GeneralStat < ApplicationRecord
   validates_presence_of :weight
   validates_presence_of :user_id
 
+  validates :weight, :numericality => { :greater_than_or_equal_to => 0 }
+  validates :cal, :numericality => { :greater_than_or_equal_to => 0 }
+
+
   before_save :calculate_average_weight
 
   LIMIT = 7
