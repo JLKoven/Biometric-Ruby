@@ -21,15 +21,32 @@ john.save! unless !User.where(email: john.email).empty?
 
 puts "Created John"
 
+john2 = User.new
+john2.email = 'johnkoven210@gmail.com'
+john2.password = 'kenisthebest'
+john2.password_confirmation = 'kenisthebest'
+john2.save! unless !User.where(email: john2.email).empty?
+
+puts "Created John2"
+
+#user_list_association = [{'user1' => john, 'user2' => john2}]
+#user_list = [{'user1' => john, 'user2' => john2}]
+
 exercise_types = [
 {'name' => 'bench', 'description' => 'compound chest exercise'},
 {'name' => 'low squat', 'description' => 'compound leg exercise with focus on quadriceps'},
 {'name' => 'overhead', 'description' => 'compound shoulder exercise'},
 {'name' => 'deadlift', 'description' => 'sheer strength exercise'}
 ]
+
+#user_list.each do |listedUser|
 exercise_types.each do |type|
-  ExerciseType.find_or_create_by(type)
+  var = type
+  binding.pry
+  var[:user_id] = john.user_id
+  ExerciseType.find_or_create_by(var)
 end
+#end
 
 exercise_programs = [
 {'name' => 'initialFourSet', 'description' => 'variable weights, focus on first set as hardest'},
@@ -39,7 +56,9 @@ exercise_programs = [
 {'name' => 'Wendler4', 'description' => 'Rest phase of cycle'}
 ]
 exercise_programs.each do |type|
-  ExerciseProgram.find_or_create_by(type)
+  var = type
+  var[:user_id] = john.user_id
+  ExerciseProgram.find_or_create_by(var)
 end
 
 csv_with_class_names = {
