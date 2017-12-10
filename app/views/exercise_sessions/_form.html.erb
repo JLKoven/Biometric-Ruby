@@ -18,12 +18,12 @@
 
   <div class="field">
     <%= form.label :exercise_type %>
-      <%= form.collection_select(:exercise_type_id, ExerciseType.all, :id, :name, prompt: true) %>
+      <%= form.collection_select(:exercise_type_id, current_user.exercise_types, :id, :name, prompt: true) %>
   </div>
 
   <div class="field">
     <%= form.label :exercise_program %>
-      <%= form.collection_select(:exercise_program_id, ExerciseProgram.all, :id, :name, prompt: true) %>
+      <%= form.collection_select(:exercise_program_id, current_user.exercise_programs, :id, :name, prompt: true) %>
   </div>
 
 <!--

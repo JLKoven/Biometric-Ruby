@@ -4,7 +4,7 @@ class ExerciseProgramsController < ApplicationController
   # GET /exercise_programs
   # GET /exercise_programs.json
   def index
-    @exercise_programs = ExerciseProgram.all
+    @exercise_programs = current_user.exercise_programs
   end
 
   # GET /exercise_programs/1

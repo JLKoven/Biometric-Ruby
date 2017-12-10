@@ -42,8 +42,8 @@ exercise_types = [
 #user_list.each do |listedUser|
 exercise_types.each do |type|
   var = type
-  binding.pry
-  var[:user_id] = john.user_id
+#  binding.pry
+  var[:user_id] = john.id
   ExerciseType.find_or_create_by(var)
 end
 #end
@@ -57,7 +57,7 @@ exercise_programs = [
 ]
 exercise_programs.each do |type|
   var = type
-  var[:user_id] = john.user_id
+  var[:user_id] = john.id
   ExerciseProgram.find_or_create_by(var)
 end
 
