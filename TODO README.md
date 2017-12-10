@@ -1,12 +1,12 @@
-Quick todo: 
+Quick todo:
 
-1) Troubleshooting: if I 
-I] create a new type of exercise, and then 
-II] go to the sessions page, and either add a new session with newType, or edit an existing session to have newType 
-III] go to the exerciseType page, and delete this newType 
-IV] attempt to go to the sessions page 
-I receive the following message: 
-  BEGIN ERROR MESSAGE: 
+1) Troubleshooting: if I
+I] create a new type of exercise, and then
+II] go to the sessions page, and either add a new session with newType, or edit an existing session to have newType
+III] go to the exerciseType page, and delete this newType
+IV] attempt to go to the sessions page
+I receive the following message:
+  BEGIN ERROR MESSAGE:
 NoMethodError in ExerciseSessions#index
 Showing /home/john/biometric/app/views/exercise_sessions/index.html.erb where line #23 raised:
 
@@ -18,7 +18,7 @@ Extracted source (around line #23):
 24
 25
 26
-              
+
       <tr>
         <td><%= exercise_session.date %></td>
         <td><%= exercise_session.exercise_type.name %></td>
@@ -34,23 +34,27 @@ app/views/exercise_sessions/index.html.erb:20:in `_app_views_exercise_sessions_i
 Request
 
 Parameters:
-None 
-  END ERROR MESSAGE: 
+None
+  END ERROR MESSAGE:
+
+This is bad and I don't want it to stay this way.
 
 
-2) I want to try investigating to see if all exercise sessions created by one user are accessible/editable by everyone else (they shouldn't be. There should be some baseline exercises that everyone gets, then everyone has their own data for the schem) 
+
+
+2) I want to try investigating to see if all exercise sessions created by one user are accessible/editable by everyone else (they shouldn't be. There should be some baseline exercises that everyone gets, then everyone has their own data for the schema)
+
 
 3) when I edit a session, it goes to the bottom of the page. How do I stop this? I want entries displayed organized by their date, I think
 
- 
-Goals: 
 
--maybe prevent negative numbers 
+Goals:
+
 -maybe we should add a set limit to how many entries show up on a page...?
 
--clean up UI 
---add prettier error handling 
---add more links 
+-clean up UI
+--add prettier error handling
+--add more links
 
--implement 'set goal' function 
---future: maybe implement machine learning? 
+-implement 'set goal' function
+--future: maybe implement machine learning?

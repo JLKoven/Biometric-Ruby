@@ -73,4 +73,5 @@ class GeneralStatsController < ApplicationController
     def general_stat_params
       params.require(:general_stat).permit(:date, :weight, :weight_avg, :cal, :user_id)
     end
+    #maybe remove weight_avg from permitted params..?
 end

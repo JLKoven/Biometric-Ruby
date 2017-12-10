@@ -4,7 +4,7 @@ class ExerciseProgramsController < ApplicationController
   # GET /exercise_programs
   # GET /exercise_programs.json
   def index
-    @exercise_programs = ExerciseProgram.all
+    @exercise_programs = current_user.exercise_programs
   end
 
   # GET /exercise_programs/1
@@ -25,6 +25,7 @@ class ExerciseProgramsController < ApplicationController
   # POST /exercise_programs.json
   def create
     @exercise_program = ExerciseProgram.new(exercise_program_params)
+    @exercise_program.user_id = current_user.id
 
     respond_to do |format|
       if @exercise_program.save
@@ -69,6 +70,6 @@ class ExerciseProgramsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def exercise_program_params
-      params.require(:exercise_program).permit(:name, :description)
+      params.require(:exercise_program).permit(:name, :description, :user_id)
     end
 end
