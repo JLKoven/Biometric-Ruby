@@ -12,7 +12,6 @@
       <th>Weight</th>
       <th>Weight avg</th>
       <th>Cal</th>
-      <th>User</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,11 +19,10 @@
   <tbody>
     <% @general_stats.each do |general_stat| %>
       <tr>
-        <td><%= general_stat.date %></td>
+        <td><%= display_date(general_stat) %></td>
         <td><%= general_stat.weight %></td>
         <td><%= general_stat.weight_avg %></td>
         <td><%= general_stat.cal %></td>
-        <td><%= general_stat.user.email %></td>
         <td><%= link_to 'Show', general_stat %></td>
         <td><%= link_to 'Edit', edit_general_stat_path(general_stat) %></td>
         <td><%= link_to 'Destroy', general_stat, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -2,7 +2,7 @@
 
 <p>
   <strong>Date:</strong>
-  <%= @general_stat.date %>
+  <%= display_date(@general_stat) %>
 </p>
 
 <p>
@@ -20,10 +20,6 @@
   <%= @general_stat.cal %>
 </p>
 
-<p>
-  <strong>User:</strong>
-  <%= @general_stat.user %>
-</p>
 
 <%= link_to 'Edit', edit_general_stat_path(@general_stat) %> |
 <%= link_to 'Back', general_stats_path %>

@@ -17,6 +17,8 @@ class GeneralStat < ApplicationRecord
     self.weight_avg = (total_weight / LIMIT).round(2)
   end
 
+
+
 private
 
 # inject is used to add together items in an array

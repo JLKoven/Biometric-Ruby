@@ -13,7 +13,7 @@
       <th>Reps</th>
       <th>Exercise session</th>
       <th>Date</th>
-      <th>User</th>
+      <th>Exercise type</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -23,9 +23,9 @@
       <tr>
         <td><%= weight_set.weight %></td>
         <td><%= weight_set.reps %></td>
-        <td><%= weight_set.exercise_session_id %></td>
-        <td><%= weight_set.exercise_session.date %></td>
-        <td><%= weight_set.user.email %></td>
+        <td><%= link_to weight_set.exercise_session_id, exercise_session_path(weight_set.exercise_session_id) %></td>
+        <td><%= display_date(weight_set.exercise_session) %></td>
+        <td><%= weight_set.exercise_type.name || 'None'  %></td>
         <td><%= link_to 'Show', weight_set %></td>
         <td><%= link_to 'Edit', edit_weight_set_path(weight_set) %></td>
         <td><%= link_to 'Destroy', weight_set, method: :delete, data: { confirm: 'Are you sure?' } %></td>

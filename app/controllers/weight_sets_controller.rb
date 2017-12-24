@@ -5,7 +5,9 @@ class WeightSetsController < ApplicationController
   # GET /weight_sets
   # GET /weight_sets.json
   def index
-    @weight_sets = current_user.weight_sets
+    @weight_sets = WeightSet.includes(:exercise_type)
+      .joins(:exercise_session)
+      .where('exercise_sessions.user_id = ?', current_user.id).limit(5).offset(5)
 
     #don't do this, this is silly
 #     @exercise_sessions = ExerciseSession.where(user: current_user)

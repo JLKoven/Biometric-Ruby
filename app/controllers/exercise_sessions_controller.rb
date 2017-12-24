@@ -13,6 +13,7 @@ class ExerciseSessionsController < ApplicationController
   # GET /exercise_sessions/1
   # GET /exercise_sessions/1.json
   def show
+    #binding.pry
   end
 
   # GET /exercise_sessions/new
@@ -72,6 +73,7 @@ class ExerciseSessionsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_exercise_session
       @exercise_session = ExerciseSession.find(params[:id])
+      #      @exercise_session = ExerciseSession.find(params[:id], :limit => 25)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
