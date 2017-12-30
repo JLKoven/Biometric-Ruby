@@ -1,10 +1,11 @@
 class ExerciseProgramsController < ApplicationController
   before_action :set_exercise_program, only: [:show, :edit, :update, :destroy]
+  before_action :set_page, only: [:index]
 
   # GET /exercise_programs
   # GET /exercise_programs.json
   def index
-    @exercise_programs = current_user.exercise_programs
+    @exercise_programs = ExerciseProgram.where('exercise_programs.user_id = ?', current_user.id).limit(10).offset(@page.to_i * 10)
   end
 
   # GET /exercise_programs/1
@@ -72,4 +73,9 @@ class ExerciseProgramsController < ApplicationController
     def exercise_program_params
       params.require(:exercise_program).permit(:name, :description, :user_id)
     end
+
+    def set_page
+      @page = params[:page] || 0
+    end
+
 end

@@ -3,6 +3,9 @@
 <h1>General Stats</h1>
 
 <%= link_to 'New General Stat', new_general_stat_path %><table>
+<br>
+<%= link_to 'Previous', general_stats_path(page: @page.to_i - 1) %>
+<%= link_to 'Next', general_stats_path(page: @page.to_i + 1) %>
 
   <br>
 

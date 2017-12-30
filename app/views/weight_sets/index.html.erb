@@ -3,6 +3,9 @@
 <h1>Weight Sets</h1>
 
 <%= link_to 'New Weight Set', new_weight_set_path %>
+<br>
+<%= link_to 'Previous', weight_sets_path(page: @page.to_i - 1) %>
+<%= link_to 'Next', weight_sets_path(page: @page.to_i + 1) %>
 
 <br>
 
@@ -32,4 +35,5 @@
       </tr>
     <% end %>
   </tbody>
+
 </table>

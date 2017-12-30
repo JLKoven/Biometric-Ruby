@@ -2,6 +2,12 @@
 
 <h1>Exercise Programs</h1>
 
+<%= link_to 'New Exercise Program', new_exercise_program_path %>
+<br>
+<%= link_to 'Previous', exercise_programs_path(page: @page.to_i - 1) %>
+<%= link_to 'Next', exercise_programs_path(page: @page.to_i + 1) %>
+
+
 <table>
   <thead>
     <tr>
@@ -25,5 +31,3 @@
 </table>
 
 <br>
-
-<%= link_to 'New Exercise Program', new_exercise_program_path %>

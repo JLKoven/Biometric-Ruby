@@ -1,13 +1,13 @@
 class ExerciseSessionsController < ApplicationController
   before_action :set_exercise_session, only: [:show, :edit, :update, :destroy]
-
+  before_action :set_page, only: [:index]
 #make sure this works if nobody is logged in
   before_action :authenticate_user!
 
   # GET /exercise_sessions
   # GET /exercise_sessions.json
   def index
-    @exercise_sessions = ExerciseSession.where(user_id: current_user.id)
+    @exercise_sessions = ExerciseSession.where('exercise_sessions.user_id = ?', current_user.id).limit(10).offset(@page.to_i * 10)
   end
 
   # GET /exercise_sessions/1
@@ -80,4 +80,9 @@ class ExerciseSessionsController < ApplicationController
     def exercise_session_params
       params.require(:exercise_session).permit(:date, :user_id, :exercise_type_id, :exercise_program_id)
     end
+
+    def set_page
+      @page = params[:page] || 0
+    end
+
 end

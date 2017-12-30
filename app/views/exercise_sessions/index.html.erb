@@ -4,6 +4,11 @@
 
 <%= link_to 'New Exercise Session', new_exercise_session_path %>
 <br>
+<%= link_to 'Previous', exercise_sessions_path(page: @page.to_i - 1) %>
+<%= link_to 'Next', exercise_sessions_path(page: @page.to_i + 1) %>
+
+
+<br>
 
 <table>
   <thead>

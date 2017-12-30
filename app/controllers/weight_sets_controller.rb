@@ -1,13 +1,14 @@
 class WeightSetsController < ApplicationController
   before_action :set_weight_set, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
-
+  before_action :set_page, only: [:index]
   # GET /weight_sets
   # GET /weight_sets.json
   def index
     @weight_sets = WeightSet.includes(:exercise_type)
       .joins(:exercise_session)
-      .where('exercise_sessions.user_id = ?', current_user.id).limit(5).offset(5)
+      .where('exercise_sessions.user_id = ?', current_user.id).limit(10).offset(@page.to_i * 10)
+
 
     #don't do this, this is silly
 #     @exercise_sessions = ExerciseSession.where(user: current_user)
@@ -56,7 +57,7 @@ class WeightSetsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /weight_sets/1
+  # PATCH/PUT /weight_sets/1weight_sets
   # PATCH/PUT /weight_sets/1.json
   def update
     respond_to do |format|
@@ -90,4 +91,8 @@ class WeightSetsController < ApplicationController
     def weight_set_params
       params.require(:weight_set).permit(:weight, :reps, :exercise_session_id)
     end#HAHAHAHAHAHA
+
+    def set_page
+      @page = params[:page] || 0
+    end
 end

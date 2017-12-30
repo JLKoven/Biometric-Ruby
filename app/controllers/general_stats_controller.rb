@@ -1,11 +1,12 @@
 class GeneralStatsController < ApplicationController
   before_action :set_general_stat, only: [:show, :edit, :update, :destroy]
+  before_action :set_page, only: [:index]
 
   # GET /general_stats
   # GET /general_stats.json
   def index
 #    @general_stats = GeneralStat.all
-@general_stats = GeneralStat.where(user_id: current_user.id)
+@general_stats = GeneralStat.where('general_stats.user_id = ?', current_user.id).limit(10).offset(@page.to_i * 10)
   end
 
   # GET /general_stats/1
@@ -74,4 +75,9 @@ class GeneralStatsController < ApplicationController
       params.require(:general_stat).permit(:date, :weight, :weight_avg, :cal, :user_id)
     end
     #maybe remove weight_avg from permitted params..?
+
+
+    def set_page
+      @page = params[:page] || 0
+    end
 end
