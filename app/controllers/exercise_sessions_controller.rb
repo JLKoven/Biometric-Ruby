@@ -7,7 +7,33 @@ class ExerciseSessionsController < ApplicationController
   # GET /exercise_sessions
   # GET /exercise_sessions.json
   def index
-    @exercise_sessions = ExerciseSession.where('exercise_sessions.user_id = ?', current_user.id).limit(10).offset(@page.to_i * 10)
+
+#    @exercise_sessions = ExerciseSession
+#      .where('exercise_sessions.user_id = ?', current_user.id).limit(10).offset(@page.to_i * 10)
+    #type and session were included/joined for weight_set to eliminate/prevent cache calls for  'session and user'
+    #now we are trying to eager load to eliminate/prevent cache calls for 'exercise type and program'
+
+#    @exercise_sessions = ExerciseSession
+#    .includes(:exercise_type)
+#      .joins(:exercise_program)
+#      .where('exercise_programs.user_id = ?', current_user.id).limit(10).offset(@page.to_i * 10)
+#okay cool but now we're still caching exercise program
+
+@exercise_sessions = ExerciseSession
+.includes(:exercise_type, :exercise_program)
+  .joins(:exercise_type)
+  .where('exercise_sessions.user_id = ?', current_user.id).limit(10).offset(@page.to_i * 10)
+#even better
+
+#@exercise_sessions = ExerciseSession
+#.includes(:exercise_type, :exercise_program)
+#  .joins(:exercise_program)
+#  .where('exercise_programs.user_id = ?', current_user.id).limit(10).offset(@page.to_i * 10)
+#this also works
+#exercise_programs OR type works
+
+
+
   end
 
   # GET /exercise_sessions/1
