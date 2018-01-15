@@ -1,17 +1,10 @@
 short-term goals:
 
-weight_set should show the exercise type!!
--DONE
 
-lol why are we showing user
--DONE
 
-(maybe hide the excess info on date from the user)
--DONE
+figure out how to negative test on invalid attributes (specifically id) in a non-cheesy way 
 
-on 'create' (multiple pages), make sure the 'create' shows useful information (not in terms of the object's mem number thing)
--DONE
-
+Pages shouldn't start being numbered at 0 :)
 
 Make a lot of these things hyperlinks
 -<td><%= link_to weight_set.exercise_session_id, exercise_sessions_path(:weight_set.exercise_session_id) %></td>
@@ -23,6 +16,8 @@ and
  leads to "undefined method 'to_model' for 1:Integer Did you mean?  to_yaml"
 I think I need to alter the show...? no, maybe not. adding a .pry at the show only causes the /30 url to get invoked, not the .30
 -DONE
+
+anchors
 
 
 

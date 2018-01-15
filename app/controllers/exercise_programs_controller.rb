@@ -5,7 +5,8 @@ class ExerciseProgramsController < ApplicationController
   # GET /exercise_programs
   # GET /exercise_programs.json
   def index
-    @exercise_programs = ExerciseProgram.where('exercise_programs.user_id = ?', current_user.id).limit(10).offset(@page.to_i * 10)
+#    @exercise_programs = ExerciseProgram.where('exercise_programs.user_id = ?', current_user.id).limit(10).offset(@page.to_i * 10)
+    @exercise_programs = ExerciseProgram.for_page(@page, current_user)
   end
 
   # GET /exercise_programs/1
@@ -26,7 +27,7 @@ class ExerciseProgramsController < ApplicationController
   # POST /exercise_programs.json
   def create
     @exercise_program = ExerciseProgram.new(exercise_program_params)
-    @exercise_program.user_id = current_user.id
+    @exercise_program.user_id = current_user.id #current_user.try(:id)
 
     respond_to do |format|
       if @exercise_program.save
