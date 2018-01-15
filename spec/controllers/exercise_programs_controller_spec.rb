@@ -25,15 +25,31 @@ require 'rails_helper'
 
 RSpec.describe ExerciseProgramsController, type: :controller do
 
+  let!(:test_user) do
+    User.create(email:"bob@bob.com",
+    password: "qwerty",
+    password_confirmation: "qwerty")
+  end
+
+  before(:each) do
+    sign_in test_user
+  end
+
   # This should return the minimal set of attributes required to create a valid
   # ExerciseProgram. As you add validations to ExerciseProgram, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
+    #skip("Add a hash of attributes valid for your model")#<--this is the message that will be shown from you skipping
+#    {}
+    #WHOA WE'RE NOT SKIPPING ANYTHING
+    {user_id: test_user.id}
   }
 
   let(:invalid_attributes) {
     skip("Add a hash of attributes invalid for your model")
+#todo: how to break user_id    
+#    {user_id: -5}
+#    {user_id: nil}
   }
 
   # This should return the minimal set of values that should be in the session
