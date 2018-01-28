@@ -19,11 +19,15 @@ class ExerciseSessionsController < ApplicationController
 #      .where('exercise_programs.user_id = ?', current_user.id).limit(10).offset(@page.to_i * 10)
 #okay cool but now we're still caching exercise program
 
-@exercise_sessions = ExerciseSession
-.includes(:exercise_type, :exercise_program)
-  .joins(:exercise_type)
-  .where('exercise_sessions.user_id = ?', current_user.id).limit(10).offset(@page.to_i * 10)
+#@exercise_sessions = ExerciseSession
+#.includes(:exercise_type, :exercise_program)
+#  .joins(:exercise_type)
+#  .where('exercise_sessions.user_id = ?', current_user.id).limit(10).offset(@page.to_i * 10)
 #even better
+
+@exercise_sessions = ExerciseSession
+.for_page(@page, current_user)
+#EVEN BETTER
 
 #@exercise_sessions = ExerciseSession
 #.includes(:exercise_type, :exercise_program)
