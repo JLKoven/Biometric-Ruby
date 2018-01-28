@@ -21,8 +21,7 @@ class GeneralStat < ApplicationRecord
 #@exercise_programs = ExerciseProgram.where('exercise_programs.user_id = ?', current_user.id).limit(10).offset(@page.to_i * 10)
 #@exercise_programs = ExerciseProgram.for_page(@page)
 #    page_limit = 10
-    where('general_stats.user_id = ?',
-    current_user.id)
+    where('general_stats.user_id = ?', current_user.id)
     .limit(page_limit)
     .offset(page.to_i * page_limit)
   end

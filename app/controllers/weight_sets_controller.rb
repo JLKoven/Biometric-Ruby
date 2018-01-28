@@ -5,9 +5,13 @@ class WeightSetsController < ApplicationController
   # GET /weight_sets
   # GET /weight_sets.json
   def index
-    @weight_sets = WeightSet.includes(:exercise_type)
-      .joins(:exercise_session)
-      .where('exercise_sessions.user_id = ?', current_user.id).limit(10).offset(@page.to_i * 10)
+    @weight_sets = WeightSet
+    .for_page(@page, current_user)
+
+    # = WeightSet.includes(:exercise_type)
+    #  .joins(:exercise_session)
+    #  .where('exercise_sessions.user_id = ?', current_user.id).limit(10).offset(@page.to_i * 10)
+
 
 
     #don't do this, this is silly
