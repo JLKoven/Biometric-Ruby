@@ -5,4 +5,13 @@ class WeightSet < ApplicationRecord
 
   validates :weight, :numericality => { :greater_than_or_equal_to => 0 }
   validates :reps, :numericality => { :greater_than_or_equal_to => 0 }
+
+  def self.for_page(page, current_user, page_limit=10)
+    WeightSet
+   joins(:exercise_session)
+    .where('exercise_sessions.user_id = ?', current_user.id)
+    .limit(page_limit)
+    .offset(page.to_i * page_limit)
+  end
+
 end

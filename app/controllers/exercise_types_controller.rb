@@ -5,7 +5,9 @@ class ExerciseTypesController < ApplicationController
   # GET /exercise_types
   # GET /exercise_types.json
   def index
-    @exercise_types = ExerciseType.where('exercise_types.user_id = ?', current_user.id).limit(10).offset(@page.to_i * 10)
+#    @exercise_types = ExerciseType.where('exercise_types.user_id = ?', current_user.id).limit(10).offset(@page.to_i * 10)
+    @exercise_types = ExerciseType
+    .for_page(@page, current_user)
   end
 
   # GET /exercise_types/1

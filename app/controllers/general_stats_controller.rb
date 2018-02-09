@@ -6,7 +6,8 @@ class GeneralStatsController < ApplicationController
   # GET /general_stats.json
   def index
 #    @general_stats = GeneralStat.all
-@general_stats = GeneralStat.where('general_stats.user_id = ?', current_user.id).limit(10).offset(@page.to_i * 10)
+@general_stats = GeneralStat
+.for_page(@page, current_user)
   end
 
   # GET /general_stats/1
