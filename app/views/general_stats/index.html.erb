@@ -4,8 +4,10 @@
 
 <%= link_to 'New General Stat', new_general_stat_path %><table>
 <br>
+<%= link_to 'First', general_stats_path(page: 0) %>
 <%= link_to 'Previous', general_stats_path(page: @page.to_i - 1) %>
 <%= link_to 'Next', general_stats_path(page: @page.to_i + 1) %>
+<%= link_to 'Last', general_stats_path(page: ((GeneralStat.all.size)/10)) %>
 
   <br>
 

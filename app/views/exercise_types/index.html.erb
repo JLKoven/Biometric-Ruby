@@ -4,8 +4,10 @@
 
 <%= link_to 'New Exercise Type', new_exercise_type_path %>
 <br>
+<%= link_to 'First', exercise_types_path(page: 0) %>
 <%= link_to 'Previous', exercise_types_path(page: @page.to_i - 1) %>
 <%= link_to 'Next', exercise_types_path(page: @page.to_i + 1) %>
+<%= link_to 'Last', exercise_types_path(page: ((ExerciseType.all.size)/10)) %>
 
 
 <table>

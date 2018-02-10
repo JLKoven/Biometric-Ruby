@@ -4,8 +4,10 @@
 
 <%= link_to 'New Weight Set', new_weight_set_path %>
 <br>
+<%= link_to 'First', weight_sets_path(page: 0) %>
 <%= link_to 'Previous', weight_sets_path(page: @page.to_i - 1) %>
 <%= link_to 'Next', weight_sets_path(page: @page.to_i + 1) %>
+<%= link_to 'Last', weight_sets_path(page: ((WeightSet.all.size)/10)) %>
 
 <br>
 
