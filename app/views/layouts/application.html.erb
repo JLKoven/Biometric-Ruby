@@ -12,6 +12,7 @@ This is on every page
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= csrf_meta_tags %>
+    <%= javascript_pack_tag 'hello_react' %>
   </head>
 
   <body>
@@ -49,6 +50,7 @@ it'll allow anyone to readily switch to the 'general stats', 'exercise sessions'
     <%= yield %>
     <!--
 yield gets replaced with whatever *.erb file the router is currently 'pointing' to/at   -->
-    <%= javascript_include_tag "application" %>
+<%= javascript_pack_tag 'application' %>
+
   </body>
 </html>
