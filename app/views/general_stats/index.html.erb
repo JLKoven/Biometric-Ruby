@@ -1,5 +1,8 @@
 <p id="notice"><%= notice %></p>
 
+<%= javascript_pack_tag 'general_stat' %>    <!-- this doesn't seem to do anything-->
+
+
 <h1>General Stats</h1>
 
 <%= link_to 'New General Stat', new_general_stat_path %><table>
@@ -20,6 +23,14 @@
       <th colspan="3"></th>
     </tr>
   </thead>
+
+hi!!
+  <%= content_tag :div,
+    id: "general_stats_data",
+    data: @general_stats.to_json do %>
+  <% end %>
+  <!-- this doesn't seem to do anything either herp derp-->
+
 
   <tbody>
     <!-- we're gonna replace this with a file from the pack's directory!-->
